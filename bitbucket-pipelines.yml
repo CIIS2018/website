@@ -1,0 +1,16 @@
+image: php:7.1.6
+
+pipelines:
+  default:
+    - step:
+        name: Test Php
+        deployment: test   # set to test, staging or production
+        caches:
+          - composer
+        script:
+          - apt-get update && apt-get install -y unzip -qy git libmcrypt-dev mysql-client
+          - curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+          - composer install
+          - ln -f -s .env.example .env
+          - php artisan serve &
+          - sleep 1
