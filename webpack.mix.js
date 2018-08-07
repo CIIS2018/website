@@ -20,5 +20,6 @@ mix.styles(['resources/assets/css/bootstrap.css',
 ], 'public/css/frontend.min.css')
     .scripts([
         'resources/assets/js/taller.js',
-        'resources/assets/js/smooth.js'
+        'resources/assets/js/smooth.js',
+        'resources/assets/js/inscription.js'
     ], 'public/js/frontend.min.js')

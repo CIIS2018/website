@@ -14,4 +14,11 @@ class CiisController extends Controller
 
     }
 
+    public function inscription(){
+        return view('frontend.inscription.inscription');
+
+
+    }
+
+
 }

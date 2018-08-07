@@ -1,7 +1,7 @@
 <div class="container-fluid bg-white">
     <div class="container bg-white">
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <a class="navbar-brand" href="/CII2018/index.html">
+            <a class="navbar-brand" href="{{ route('frontend.index') }}">
                 <img src="images/icono-web-CIIS.png" class="d-inline-block align-top nav--logo" alt="icono-del-ciis">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"

@@ -22,4 +22,6 @@ Route::group(['namespace' => 'Frontend', 'as' => 'frontend.'], function () {
 
     Route::get('/', 'CiisController@index')->name('index');
 
+    Route::get('/inscripcion', 'CiisController@inscription')->name('inscription');
+
 });

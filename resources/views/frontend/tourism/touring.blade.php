@@ -1,0 +1,69 @@
+<div class="container">
+    
+    <h2 class="text-primary pb-3 text-center" id="turismo">Turismo en Tacna</h2>
+    
+    <div class="row text-center text-lg-left">
+        
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <a href="#" class="d-block mb-4 h-100">
+                <img class="img-fluid img-thumbnail" src="images/turismotacna/tacna.jpg" alt="">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <a href="#" class="d-block mb-4 h-100">
+                <img class="img-fluid img-thumbnail" src="images/turismotacna/tacna2.jpg" alt="">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <a href="#" class="d-block mb-4 h-100">
+                <img class="img-fluid img-thumbnail" src="images/turismotacna/tacna3.jpg" alt="">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <a href="#" class="d-block mb-4 h-100">
+                <img class="img-fluid img-thumbnail" src="images/turismotacna/tacna4.jpg" alt="">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <a href="#" class="d-block mb-4 h-100">
+                <img class="img-fluid img-thumbnail" src="images/turismotacna/tacna5.jpg" alt="">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <a href="#" class="d-block mb-4 h-100">
+                <img class="img-fluid img-thumbnail" src="images/turismotacna/tacna6.jpg" alt="">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <a href="#" class="d-block mb-4 h-100">
+                <img class="img-fluid img-thumbnail" src="images/turismotacna/tacna7.jpg" alt="">
+            </a>
+        </div>
+        <!-- <div class="col-lg-3 col-md-4 col-xs-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="images/turismotacna/tacna8.jpg" alt="">
+        </a>
+      </div> -->
+        <!-- <div class="col-lg-3 col-md-4 col-xs-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-xs-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-xs-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-xs-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+        </a>
+      </div> -->
+    </div>
+
+</div>
