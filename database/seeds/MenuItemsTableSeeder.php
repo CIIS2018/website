@@ -241,6 +241,22 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => 'voyager.hooks',
                 'parameters' => NULL,
             ),
+            14 => 
+            array (
+                'id' => 15,
+                'menu_id' => 1,
+                'title' => 'Registrados',
+                'url' => '',
+                'target' => '_self',
+                'icon_class' => 'voyager-play',
+                'color' => '#000000',
+                'parent_id' => NULL,
+                'order' => 15,
+                'created_at' => '2018-08-08 17:44:59',
+                'updated_at' => '2018-08-08 17:46:08',
+                'route' => 'voyager.registrados.index',
+                'parameters' => 'null',
+            ),
         ));
         
         

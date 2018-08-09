@@ -345,6 +345,46 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2018-08-07 03:31:15',
                 'updated_at' => '2018-08-07 03:31:15',
             ),
+            41 => 
+            array (
+                'id' => 42,
+                'key' => 'browse_registered',
+                'table_name' => 'registered',
+                'created_at' => '2018-08-08 17:44:59',
+                'updated_at' => '2018-08-08 17:44:59',
+            ),
+            42 => 
+            array (
+                'id' => 43,
+                'key' => 'read_registered',
+                'table_name' => 'registered',
+                'created_at' => '2018-08-08 17:44:59',
+                'updated_at' => '2018-08-08 17:44:59',
+            ),
+            43 => 
+            array (
+                'id' => 44,
+                'key' => 'edit_registered',
+                'table_name' => 'registered',
+                'created_at' => '2018-08-08 17:44:59',
+                'updated_at' => '2018-08-08 17:44:59',
+            ),
+            44 => 
+            array (
+                'id' => 45,
+                'key' => 'add_registered',
+                'table_name' => 'registered',
+                'created_at' => '2018-08-08 17:44:59',
+                'updated_at' => '2018-08-08 17:44:59',
+            ),
+            45 => 
+            array (
+                'id' => 46,
+                'key' => 'delete_registered',
+                'table_name' => 'registered',
+                'created_at' => '2018-08-08 17:44:59',
+                'updated_at' => '2018-08-08 17:44:59',
+            ),
         ));
         
         

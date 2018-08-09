@@ -125,6 +125,24 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2018-08-07 03:31:14',
                 'updated_at' => '2018-08-07 03:31:14',
             ),
+            6 => 
+            array (
+                'id' => 8,
+                'name' => 'registered',
+                'slug' => 'registrados',
+                'display_name_singular' => 'Registrado',
+                'display_name_plural' => 'Registrados',
+                'icon' => 'voyager-play',
+                'model_name' => 'App\\Registered',
+                'policy_name' => NULL,
+                'controller' => NULL,
+                'description' => NULL,
+                'generate_permissions' => 1,
+                'server_side' => 0,
+                'details' => '{"order_column":null,"order_display_column":null}',
+                'created_at' => '2018-08-08 17:44:59',
+                'updated_at' => '2018-08-08 17:45:41',
+            ),
         ));
         
         
