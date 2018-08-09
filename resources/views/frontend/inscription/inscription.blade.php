@@ -63,7 +63,7 @@
                     </div>
                 
                 </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="submit" class="btn-primary mb-3 info">Enviar</button>
             </form>
         </div>
     </div>

@@ -394,7 +394,7 @@ h6, .h6 {
 }
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 0.9rem;
   font-weight: 300;
 }
 
@@ -9035,7 +9035,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .header{
-    background: url("../imges/headerfondo.png");
+    background: url("../images/headerfondo.png");
     background-size: cover;
     background-position: center;
 }
@@ -9053,7 +9053,7 @@ a.text-dark:hover, a.text-dark:focus {
         height: 48px;
     }
     .header__titulo{
-        font-size: 26px;
+        font-size: 24px;
         font-weight: 900;
     }
     
@@ -9660,7 +9660,7 @@ a {
 
 @media only screen and (max-width: 479px) {
 	.precio-wrapper {
-		width: 300px;
+		width: 100%;
 	}
 }
 
@@ -9678,3 +9678,7 @@ a {
 	border-radius: 0.25rem;
 	min-height: 100% !important;
   }
+.info {
+	padding: 2%;
+	border-radius: 5%;
+}
