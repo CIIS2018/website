@@ -17,7 +17,7 @@
             <div class="col-lg-3 col-md-6">
                 <div class="card">
                     <div class="card-body">
-                        <img src="imges/lego-mindstorms.jpg" alt="" class="img-fluid mb-3">
+                        <img src="images/lego-mindstorms.jpg" alt="" class="img-fluid mb-3">
                         <h4>Concurso de programación</h4>
                         <h5 class="text-muted">Papers</h5>
                         <p>Más información pronto</p>
@@ -43,7 +43,7 @@
             <div class="col-lg-3 col-md-6">
                 <div class="card">
                     <div class="card-body">
-                        <img src="imges/lego-mindstorms.jpg" alt="" class="img-fluid mb-3">
+                        <img src="images/lego-mindstorms.jpg" alt="" class="img-fluid mb-3">
                         <h4>Concurso #2</h4>
                         <h5 class="text-muted">Co-Writer</h5>
                         <p>Más información pronto</p>
@@ -69,7 +69,7 @@
             <div class="col-lg-3 col-md-6">
                 <div class="card">
                     <div class="card-body">
-                        <img src="imges/lego-mindstorms.jpg" alt="" class="img-fluid mb-3">
+                        <img src="images/lego-mindstorms.jpg" alt="" class="img-fluid mb-3">
                         <h4>Concurso #3</h4>
                         <h5 class="text-muted">Editor</h5>
                         <p>Más información pronto</p>
@@ -95,7 +95,7 @@
             <div class="col-lg-3 col-md-6">
                 <div class="card">
                     <div class="card-body">
-                        <img src="imges/lego-mindstorms.jpg" alt="" class="img-fluid mb-3">
+                        <img src="images/lego-mindstorms.jpg" alt="" class="img-fluid mb-3">
                         <h4>Concurso #4</h4>
                         <h5 class="text-muted">Designer</h5>
                         <p>Más información pronto</p>

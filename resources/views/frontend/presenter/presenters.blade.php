@@ -33,19 +33,19 @@
                     <!-- Text -->
                     <p class="card-text">Descripción breve del ponente
                     </p>
-                    <a href="#" class="btn btn-primary">Más información</a>
+                    <a href="#" class="btn-primary mb-3 info">Más información</a>
                     <!-- Facebook -->
                     
-                    <a href="#" class=" btn btn-primary">
+                    <a href="#" class="btn btn-primary mb-3 mt-3">
                         <i class="fab fa-facebook"></i>
                     </a>
                     <!-- Twitter -->
                     
-                    <a href="#" class=" btn btn-primary">
+                    <a href="#" class="btn btn-primary mb-3 mt-3">
                         <i class="fab fa-twitter"></i>
                     </a>
                     <!-- Google + -->
-                    <a href="#" class=" btn btn-primary">
+                    <a href="#" class="btn btn-primary mb-3 mt-3">
                         <i class="fab fa-dribbble"></i>
                     </a>
                 
@@ -78,20 +78,20 @@
                     <!-- Text -->
                     <p class="card-text">Descripción breve del ponente
                     </p>
-                    <a href="#" class="btn btn-primary">Más información</a>
+                    <a href="#" class="btn-primary mb-3 info">Más información</a>
                     
                     <!-- Facebook -->
                     
-                    <a href="#" class=" btn btn-primary">
+                    <a href="#" class="btn btn-primary mb-3 mt-3">
                         <i class="fab fa-facebook"></i>
                     </a>
                     <!-- Twitter -->
                     
-                    <a href="#" class=" btn btn-primary">
+                    <a href="#" class="btn btn-primary mb-3 mt-3">
                         <i class="fab fa-twitter"></i>
                     </a>
                     <!-- Google + -->
-                    <a href="#" class=" btn btn-primary">
+                    <a href="#" class="btn btn-primary mb-3 mt-3">
                         <i class="fab fa-dribbble"></i>
                     </a>
                 
@@ -121,19 +121,19 @@
                     <!-- Text -->
                     <p class="card-text">Descripción breve del ponente
                     </p>
-                    <a href="#" class="btn btn-primary">Más información</a>
+                    <a href="#" class="btn-primary mb-3 info">Más información</a>
                     <!-- Facebook -->
                     
-                    <a href="#" class=" btn btn-primary">
+                    <a href="#" class="btn btn-primary mb-3 mt-3">
                         <i class="fab fa-facebook"></i>
                     </a>
                     <!-- Twitter -->
-                    
-                    <a href="#" class=" btn btn-primary">
-                        <i class="fab fa-twitter"></i>
+    
+                    <a href="#" class=" btn btn-primary mb-3 mt-3">
+                        <i class="fab fa-twitter text-center"></i>
                     </a>
                     <!-- Google + -->
-                    <a href="#" class=" btn btn-primary">
+                    <a href="#" class=" btn btn-primary mb-3 mt-3">
                         <i class="fab fa-dribbble"></i>
                     </a>
                 
@@ -165,19 +165,19 @@
                     <!-- Text -->
                     <p class="card-text">Descripción breve del ponente
                     </p>
-                    <a href="#" class="btn btn-primary">Más información</a>
+                    <a href="#" class="btn-primary mb-3 info">Más información</a>
                     <!-- Facebook -->
-                    
-                    <a href="#" class=" btn btn-primary">
+    
+                    <a href="#" class=" btn btn-primary mb-3 mt-3">
                         <i class="fab fa-facebook"></i>
                     </a>
                     <!-- Twitter -->
-                    
-                    <a href="#" class=" btn btn-primary">
+    
+                    <a href="#" class=" btn btn-primary mb-3 mt-3">
                         <i class="fab fa-twitter"></i>
                     </a>
                     <!-- Google + -->
-                    <a href="#" class=" btn btn-primary">
+                    <a href="#" class=" btn btn-primary mb-3 mt-3">
                         <i class="fab fa-dribbble"></i>
                     </a>
                 
@@ -209,19 +209,19 @@
                     <!-- Text -->
                     <p class="card-text">Descripción breve del ponente
                     </p>
-                    <a href="#" class="btn btn-primary">Más información</a>
+                    <a href="#" class="btn-primary mb-3 info">Más información</a>
                     <!-- Facebook -->
                     
-                    <a href="#" class=" btn btn-primary">
+                    <a href="#" class="btn btn-primary mb-3 mt-3">
                         <i class="fab fa-facebook"></i>
                     </a>
                     <!-- Twitter -->
                     
-                    <a href="#" class=" btn btn-primary">
+                    <a href="#" class="btn btn-primary mb-3 mt-3">
                         <i class="fab fa-twitter"></i>
                     </a>
                     <!-- Google + -->
-                    <a href="#" class=" btn btn-primary">
+                    <a href="#" class="btn btn-primary mb-3 mt-3">
                         <i class="fab fa-dribbble"></i>
                     </a>
                 
@@ -250,19 +250,19 @@
                     <!-- Text -->
                     <p class="card-text">Descripción breve del ponente
                     </p>
-                    <a href="#" class="btn btn-primary">Más información</a>
+                    <a href="#" class="btn-primary mb-3 info">Más información</a>
                     <!-- Facebook -->
                     
-                    <a href="#" class=" btn btn-primary">
+                    <a href="#" class="btn btn-primary mb-3 mt-3">
                         <i class="fab fa-facebook"></i>
                     </a>
                     <!-- Twitter -->
                     
-                    <a href="#" class=" btn btn-primary">
+                    <a href="#" class="btn btn-primary mb-3 mt-3">
                         <i class="fab fa-twitter"></i>
                     </a>
                     <!-- Google + -->
-                    <a href="#" class=" btn btn-primary">
+                    <a href="#" class="btn btn-primary mb-3 mt-3">
                         <i class="fab fa-dribbble"></i>
                     </a>
                 

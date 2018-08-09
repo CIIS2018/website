@@ -6,7 +6,7 @@
                 <div class="carousel-item col-md-4 active">
                     <div class="card">
                         <div class="zoom">
-                            <img class="card-img-top img-fluid" src="imges/react.png" alt="Card image cap">
+                            <img class="card-img-top img-fluid" src="images/react.png" alt="Card image cap">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">Nombre de Taller #1</h4>
@@ -26,15 +26,15 @@
             </ul> -->
                         
                         <div class="card-footer">
-                            <a href="#" class="btn btn-primary">PREINSCRIPCIÓN</a>
-                            <a href="#" class="btn btn-primary">Temario</a>
+                            <a href="#" class="btn-primary mb-3 info">PREINSCRIPCIÓN</a>
+                            <a href="#" class="btn-primary mb-3 info">Temario</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item col-md-4">
                     <div class="card">
                         <div class="zoom">
-                            <img class="card-img-top img-fluid" src="imges/react.png" alt="Card image cap">
+                            <img class="card-img-top img-fluid" src="images/react.png" alt="Card image cap">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">Nombre de Taller #2</h4>
@@ -46,7 +46,7 @@
                             <p class="card-text">Lugar: </p>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-primary">PREINSCRIPCIÓN</a>
+                            <a href="#" class="btn-primary mb-3 info">PREINSCRIPCIÓN</a>
                             
                             <!-- <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
                             Launch demo modal
@@ -58,7 +58,7 @@
                 <div class="carousel-item col-md-4">
                     <div class="card">
                         <div class="zoom">
-                            <img class="card-img-top img-fluid" src="imges/react.png" alt="Card image cap">
+                            <img class="card-img-top img-fluid" src="images/react.png" alt="Card image cap">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">Nombre de Taller #3</h4>
@@ -70,15 +70,15 @@
                             <p class="card-text">Lugar: </p>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-primary">PREINSCRIPCIÓN</a>
-                            <a href="#" class="btn btn-primary">Temario</a>
+                            <a href="#" class="btn-primary mb-3 info">PREINSCRIPCIÓN</a>
+                            <a href="#" class="btn-primary mb-3 info">Temario</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item col-md-4">
                     <div class="card">
                         <div class="zoom">
-                            <img class="card-img-top img-fluid" src="imges/react.png" alt="Card image cap">
+                            <img class="card-img-top img-fluid" src="images/react.png" alt="Card image cap">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">Nombre de Taller #4</h4>
@@ -90,15 +90,15 @@
                             <p class="card-text">Lugar: </p>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-primary">PREINSCRIPCIÓN</a>
-                            <a href="#" class="btn btn-primary">Temario</a>
+                            <a href="#" class="btn-primary mb-3 info">PREINSCRIPCIÓN</a>
+                            <a href="#" class="btn-primary mb-3 info">Temario</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item col-md-4">
                     <div class="card">
                         <div class="zoom">
-                            <img class="card-img-top img-fluid" src="imges/react.png" alt="Card image cap">
+                            <img class="card-img-top img-fluid" src="images/react.png" alt="Card image cap">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">Nombre de Taller #5</h4>
@@ -110,15 +110,15 @@
                             <p class="card-text">Lugar: </p>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-primary">PREINSCRIPCIÓN</a>
-                            <a href="#" class="btn btn-primary">Temario</a>
+                            <a href="#" class="btn-primary mb-3 info">PREINSCRIPCIÓN</a>
+                            <a href="#" class="btn-primary mb-3 info">Temario</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item col-md-4">
                     <div class="card">
                         <div class="zoom">
-                            <img class="card-img-top img-fluid" src="imges/react.png" alt="Card image cap">
+                            <img class="card-img-top img-fluid" src="images/react.png" alt="Card image cap">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">Nombre de Taller #6</h4>
@@ -130,15 +130,15 @@
                             <p class="card-text">Lugar: </p>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-primary">PREINSCRIPCIÓN</a>
-                            <a href="#" class="btn btn-primary">Temario</a>
+                            <a href="#" class="btn-primary mb-3 info">PREINSCRIPCIÓN</a>
+                            <a href="#" class="btn-primary mb-3 info">Temario</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item col-md-4">
                     <div class="card">
                         <div class="zoom">
-                            <img class="card-img-top img-fluid" src="imges/react.png" alt="Card image cap">
+                            <img class="card-img-top img-fluid" src="images/react.png" alt="Card image cap">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">Nombre de Taller #7</h4>
@@ -150,8 +150,8 @@
                             <p class="card-text">Lugar: </p>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-primary">PREINSCRIPCIÓN</a>
-                            <a href="#" class="btn btn-primary">Temario</a>
+                            <a href="#" class="btn-primary mb-3 info">PREINSCRIPCIÓN</a>
+                            <a href="#" class="btn-primary mb-3 info">Temario</a>
                         </div>
                     </div>
                 </div>
