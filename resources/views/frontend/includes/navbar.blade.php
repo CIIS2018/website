@@ -32,7 +32,7 @@
                         <a class="nav-link menu__item" href="#turismo">TURISMO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link menu__item" href="#turismo">¿Como inscribirme?</a>
+                        <a class="nav-link menu__item" href="#pasos">¿Como inscribirme?</a>
                     </li>
                 </ul>
             </div>

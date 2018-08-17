@@ -11,14 +11,14 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.styles(['resources/assets/css/bootstrap.css',
-    'resources/assets/css/mocade.css',
-    'resources/assets/css/all.css',
-    'resources/assets/css/taller.css',
-    'resources/assets/css/precios.css',
-
-], 'public/css/frontend.min.css')
-    .scripts([
+// mix.styles(['resources/assets/css/bootstrap.css',
+//     'resources/assets/css/mocade.css',
+//     'resources/assets/css/all.css',
+//     'resources/assets/css/taller.css',
+//     'resources/assets/css/precios.css',
+//
+// ], 'public/css/frontend.min.css');
+    mix.scripts([
         'resources/assets/js/taller.js',
         'resources/assets/js/smooth.js',
         'resources/assets/js/inscription.js'

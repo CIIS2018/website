@@ -171,7 +171,7 @@ a {
 
 a:hover {
   color: #0056b3;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:not([href]):not([tabindex]) {
@@ -9081,7 +9081,7 @@ a.text-dark:hover, a.text-dark:focus {
 */
 
 .card {
-    padding-top: 20px;
+    padding-top: 0px;
     margin: 10px 0 20px 0;
     background-color: rgba(214, 224, 226, 0.2);
     border-top-width: 0;
@@ -9681,4 +9681,13 @@ a {
 .info {
 	padding: 2%;
 	border-radius: 5%;
+}
+.fondo-esis{
+  background: #9CECFB;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+}
+
+.text-blanco{
+  color:white;
 }

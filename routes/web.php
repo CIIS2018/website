@@ -24,4 +24,7 @@ Route::group(['namespace' => 'Frontend', 'as' => 'frontend.'], function () {
 
     Route::get('/inscripcion', 'CiisController@inscription')->name('inscription');
 
+    Route::post('/inscripcion', 'CiisController@registerInscription');
+
+
 });
