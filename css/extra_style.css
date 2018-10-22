@@ -1,0 +1,49 @@
+.a_small{
+    transition: transform .3s;
+}
+.a_small:hover{
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1);
+}
+.a_title{
+    transition: transform .4s;
+}
+.a_title:hover{
+    -ms-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3); 
+}
+.a_inversion{
+    transition: transform .4s;
+}
+.a_inversion:hover{
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+ .f_time {
+    transition: transform .3s;
+ }
+.f_time:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); 
+}
+.Blurb:hover .Blurb__hoverText,.nav-tabs>li>a h2 {
+    color:#000af9
+}
+
+.text-white,.text-white p,.text-white a,.white,.white p,.white a {
+    color:#ffffff !important;
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}

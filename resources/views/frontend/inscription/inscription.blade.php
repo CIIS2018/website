@@ -1,4 +1,4 @@
-@extends('frontend.layouts.app')
+﻿@extends('frontend.layouts.app')
 
 @section('title','XIX Congreso Internacional de Informática y Sistemas 2018 - Preinscripciones' )
 
@@ -11,15 +11,15 @@
     <div class="container bg-white" style="margin:0 auto;padding:5%">
         <h2 class="text-primary mb-3">Inscripción</h2>
         <h4 class="mb-3" style="font-size: 11pt;">Asegura tu lugar en el XIX Congreso Internacional de Informática y Sistemas e inscribete</h4>
-        <h4 class="mb-3" style="font-size: 11pt;color:red">La inscripción se habilitará muy pronto</h4>
+        <h4 class="mb-3" style="font-size: 11pt;color:green">*Escribe tus nombres y apellidos completos</h4>
         <form id="inscripcion" enctype="multipart/form-data" >
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mb-2">
-                    <input type="text" class="form-control" name="name" id="nombre" placeholder="Nombre">
+                    <input type="text" class="form-control" name="name" id="nombre" placeholder="Nombres Completos">
                     <div class="form-control-feedback" style="display: none;color: red" id="alerta-nombre"></div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mb-2">
-                    <input type="text" class="form-control" name="lastname" id="apellido" placeholder="Apellido">
+                    <input type="text" class="form-control" name="lastname" id="apellido" placeholder="Apellido Paterno y Materno">
                     <div class="form-control-feedback" style="display: none;color: red" id="alerta-apellido"></div>
                 </div>
             </div>
@@ -77,7 +77,8 @@
             <div class="statusMsg"></div>
 
         </form>
-        <div id="cargado"></div>
+        <div id="cargado"></div>	
+<div class="text-primary mrg-3">Si tiene alguna duda puede enviar un correo al ciistacna@unjbg.edu.pe </div>
     </div>
 </div>
     

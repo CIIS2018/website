@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col">
                 <div class="info-header mb-5">
-                    <h2 class="text-primary pb-3">
+                    <h2 class="text-primary pb-3 a_small">
                         Ejes temáticos del XIX CIIS
                     </h2>
                     <!-- <p class="lead pb-3">
@@ -13,7 +13,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 a_small">
                 <div class="card">
                     <div class="card-body">
                         <img style="width: 50px;height: 60px;" src="images/ico-uno.png" alt="" class="img-fluid mb-3">
@@ -26,7 +26,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 a_small">
                 <div class="card">
                     <div class="card-body">
                         <img style="width: 50px;height: 60px;" src="images/ico-dos.png" alt="" class="img-fluid mb-3">
@@ -37,7 +37,7 @@
                 </div>
             </div>
             
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 a_small">
                 <div class="card">
                     <div class="card-body">
                         <img style="width: 50px;height: 60px;" src="images/ico-tres.png" alt="" class="img-fluid mb-3">
@@ -48,7 +48,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 a_small">
                 <div class="card">
                     <div class="card-body">
                         <img style="width: 50px;height: 60px;" src="images/ico-cuatro.png" alt="" class="img-fluid mb-3">
@@ -56,6 +56,26 @@
                         
                         <p style="font-size: 11pt">Representa el conjunto de métodos, herramientas y técnicas que se utilizan en el desarrollo del
                             software.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 eje-tematico-centrar a_small">
+                <div class="card">
+                    <div class="card-body">
+                        <img style="width: 50px;height: 60px;" src="images/robotica.png" alt="" class="img-fluid mb-3">
+                        <h4 class="text-primary">Robótica</h4>
+                        
+                        <p style="font-size: 11pt">La robótica es una ciencia o rama de la tecnología, que estudia el diseño y construcción de máquinas capaces de desempeñar tareas realizadas por el ser humano o que requieren del uso de inteligencia.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 eje-tematico-centrar a_small">
+                <div class="card">
+                    <div class="card-body">
+                        <img style="width: 50px;height: 60px;" src="images/dna.png" alt="" class="img-fluid mb-3">
+                        <h4 class="text-primary">Bioinformática</h4>
+                        
+                        <p style="font-size: 11pt">Es un área de investigación multidisciplinaria, la cual puede ser ampliamente definida como la interfase entre dos ciencias: Biología y Computación.</p>
                     </div>
                 </div>
             </div>

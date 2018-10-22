@@ -1,4 +1,4 @@
-<div class="container-fluid bg-white">
+<div class="container-fluid bg-white fixed-top ">
     <div class="container bg-white">
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <a class="navbar-brand" href="{{ route('frontend.index') }}">
@@ -11,28 +11,31 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav ">
                     <li class="nav-item">
-                        <a class="nav-link menu__item" href="#">INICIO</a>
+                        <a class="nav-link menu__item" href="{{ route('frontend.index') }}">INICIO</a>
+                    </li>
+                    {{--<li class="nav-item">
+                        <a class="nav-link menu__item" href="{{ route('frontend.postmaster') }}">POSTMASTER</a>
+                    </li>--}}
+                    <li class="nav-item">
+                        <a class="nav-link menu__item" data-scroll href="#ponentes">PONENTES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link menu__item" href="#ponentes">PONENTES</a>
+                        <a class="nav-link menu__item" data-scroll href="#talleres">TALLERES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link menu__item" href="#talleres">TALLERES</a>
+                        <a class="nav-link menu__item" data-scroll href="#concursos_ciis">CONCURSOS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link menu__item" href="#authors">CONCURSOS</a>
+                        <a class="nav-link menu__item" data-scroll href="#feria">FERIA</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link menu__item" href="#feria">FERIA</a>
+                        <a class="nav-link menu__item" data-scroll href="#precios">PRECIO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link menu__item" href="#precios">PRECIO</a>
+                        <a class="nav-link menu__item" data-scroll href="#turismo">TURISMO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link menu__item" href="#turismo">TURISMO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link menu__item" href="#pasos">¿Como inscribirme?</a>
+                        <a class="nav-link menu__item" data-scroll href="#pasos">¿CÓMO INSCRIBIRME?</a>
                     </li>
                 </ul>
             </div>

@@ -6,6 +6,9 @@ use Validator;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Registered;
+use Mail;
+
+use Storage;
 
 class CiisController extends Controller
 {
@@ -20,10 +23,12 @@ class CiisController extends Controller
     public function inscription()
     {
         return view('frontend.inscription.inscription');
-
-
     }
 
+    
+    
+   
+    
     public function registerInscription(Request $request)
     {
 
@@ -56,7 +61,7 @@ class CiisController extends Controller
             //    $data = file_get_contents($image_path);
 
             //    $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
-
+	    
             } else {
 
                 return response()->json(['error' => 'Enviar la foto']);
@@ -80,13 +85,45 @@ class CiisController extends Controller
                 'instituto' => $request->institution,
                 'telefono' => $request->cellphone,
                 'celular' => $request->cellphone,
-                'imagen' => $contents,
-
+                'imagen' => $file_name,
+		
             ]);
+		// enviando correo
 
+		$img=(public_path()."/uploads/voucher/".$contents); //direccion del archivo
+                
+		$data = array('name' => $request->name,
+
+                              'email' => $request->email,
+
+                              'apellido' => $request->lastname,
+
+                              'dni' => $request->dni,
+
+                              'tipo_inscripcion' => $request->type_inscription,
+
+                              'ciudad' => $request->city,
+
+                              'instituto' => $request->institution,
+
+                              'telefono' => $request->cellphone,
+
+                              'celular' => $request->cellphone);
+
+                $r=Mail::send('correo.index',$data, function($message) use ($img){
+
+                  $message->from('ciis.xix@gmail.com','Pagina del ciis');
+
+                //   $message->to('miriam.19.marisol@gmail.com')->subject('nuevo asistente registrado');
+  $message->to('achoque1400@gmail.com')->subject('nuevo asistente registrado');
+                  $message->attach($img);
+                
+		});
+
+            // end enviando correo
             
             // $this->registerImageUser($user->id, $file);
-
+		
             return response()->json('ok', 200);
         } catch (\Exception $e) {
             return response()->json(['error' => 'Error al registrar'], 421);
@@ -106,6 +143,6 @@ class CiisController extends Controller
 
         return response()->json('ok', 200);
     }
-
-
+    //registrar a taller    
+    
 }

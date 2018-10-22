@@ -18,8 +18,4 @@ let mix = require('laravel-mix');
 //     'resources/assets/css/precios.css',
 //
 // ], 'public/css/frontend.min.css');
-    mix.scripts([
-        'resources/assets/js/taller.js',
-        'resources/assets/js/smooth.js',
-        'resources/assets/js/inscription.js'
-    ], 'public/js/frontend.min.js')
+    mix.scripts('resources/assets/ciis/reporte.js', 'public/js/reporte.min.js')

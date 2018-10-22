@@ -1,169 +1,119 @@
-<div class="container-fluid mt-5 mb-5">
-    <div class="container">
-        <h2 class="text-primary text-center pb-3" id="talleres">Talleres CIIS 2018</h2>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner row w-100 mx-auto">
-                <div class="carousel-item col-md-4 active">
-                    <div class="card">
-                        <div class="zoom">
-                            <img class="card-img-top img-fluid" src="images/react.png" alt="Card image cap">
+<section class="ImageBackground ImageBackground--overlay js-Parallax" data-overlay="2">
+<!--    <div class="ImageBackground__holder" style="background: rgba(0, 0, 0, 0) url('images/datacenter.jpg') repeat scroll 50% 0px;">-->
+    <div class="ImageBackground__holder" style="background-image: url('images/datacenter.jpg'); background-position: 50% 0px;">
+    
+        <img src="images/datacenter.jpg" alt="Coneic 2018">
+    </div>
+    <div class="container u-PaddingTop100 u-PaddingBottom100" id="talleres">
+         <div class="row text-center justify-content-center">
+            <div class="col-md-8 col-md-offset-2">
+                <h1 class="u-MarginTop5 u-MarginBottom10 u-Weight700 a_title" style="color: #fff;font-size:32px">Conoce nuestros talleres</h1>
+                <div class="Split Split--height2"></div>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center u-MarginBottom40">
+        
+            <div class="mx-auto col-lg-4 col-md-6 text-center u-xs-MarginBottom40 a_inversion">
+                <div class="u-BoxShadow100">
+                    <div class="Blurb Blurb--wrapper bg-primary bg-primary--gradient--ciis u-BorderRadius6">
+                        <div class="u-FontSize50 u-Weight700 img-with">
+                            <img class="card-img-top img-fluid" src="../images/fibrajpg.jpg" alt="Card image cap">
                         </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Nombre de Taller #1</h4>
-                            <p class="card-text">Descripcion del Taller</p>
-                            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                            <p class="card-text">Docente: </p>
-                            <p class="card-text">Costo: </p>
-                            <p class="card-text">Fecha y hora: </p>
-                            <p class="card-text">Lugar: </p>
-                        </div>
-                        
-                        <!-- <ul class="list-group list-group-flush">
-                <li class="list-group-item">Docente : </li>
-                <li class="list-group-item">Costo : </li>
-                <li class="list-group-item">Fecha y hora : </li>
-                <li class="list-group-item">Lugar :</li>
-            </ul> -->
-                        
-                        <div class="card-footer">
-                            <a href="#" class="btn-primary mb-3 info">PREINSCRIPCIÓN</a>
-                            <a href="#" class="btn-primary mb-3 info">Temario</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item col-md-4">
-                    <div class="card">
-                        <div class="zoom">
-                            <img class="card-img-top img-fluid" src="images/react.png" alt="Card image cap">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Nombre de Taller #2</h4>
-                            <p class="card-text">Descripción del Taller</p>
-                            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                            <p class="card-text">Docente: </p>
-                            <p class="card-text">Costo: </p>
-                            <p class="card-text">Fecha y hora: </p>
-                            <p class="card-text">Lugar: </p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn-primary mb-3 info">PREINSCRIPCIÓN</a>
-                            
-                            <!-- <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-                            Launch demo modal
-                    </a> -->
-                        
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item col-md-4">
-                    <div class="card">
-                        <div class="zoom">
-                            <img class="card-img-top img-fluid" src="images/react.png" alt="Card image cap">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Nombre de Taller #3</h4>
-                            <p class="card-text">Descripción del Taller</p>
-                            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                            <p class="card-text">Docente: </p>
-                            <p class="card-text">Costo: </p>
-                            <p class="card-text">Fecha y hora: </p>
-                            <p class="card-text">Lugar: </p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn-primary mb-3 info">PREINSCRIPCIÓN</a>
-                            <a href="#" class="btn-primary mb-3 info">Temario</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item col-md-4">
-                    <div class="card">
-                        <div class="zoom">
-                            <img class="card-img-top img-fluid" src="images/react.png" alt="Card image cap">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Nombre de Taller #4</h4>
-                            <p class="card-text">Descripción del Taller</p>
-                            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                            <p class="card-text">Docente: </p>
-                            <p class="card-text">Costo: </p>
-                            <p class="card-text">Fecha y hora: </p>
-                            <p class="card-text">Lugar: </p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn-primary mb-3 info">PREINSCRIPCIÓN</a>
-                            <a href="#" class="btn-primary mb-3 info">Temario</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item col-md-4">
-                    <div class="card">
-                        <div class="zoom">
-                            <img class="card-img-top img-fluid" src="images/react.png" alt="Card image cap">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Nombre de Taller #5</h4>
-                            <p class="card-text">Descripción del Taller</p>
-                            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                            <p class="card-text">Docente: </p>
-                            <p class="card-text">Costo: </p>
-                            <p class="card-text">Fecha y hora: </p>
-                            <p class="card-text">Lugar: </p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn-primary mb-3 info">PREINSCRIPCIÓN</a>
-                            <a href="#" class="btn-primary mb-3 info">Temario</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item col-md-4">
-                    <div class="card">
-                        <div class="zoom">
-                            <img class="card-img-top img-fluid" src="images/react.png" alt="Card image cap">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Nombre de Taller #6</h4>
-                            <p class="card-text">Descripción del Taller</p>
-                            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                            <p class="card-text">Docente: </p>
-                            <p class="card-text">Costo: </p>
-                            <p class="card-text">Fecha y hora: </p>
-                            <p class="card-text">Lugar: </p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn-primary mb-3 info">PREINSCRIPCIÓN</a>
-                            <a href="#" class="btn-primary mb-3 info">Temario</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item col-md-4">
-                    <div class="card">
-                        <div class="zoom">
-                            <img class="card-img-top img-fluid" src="images/react.png" alt="Card image cap">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Nombre de Taller #7</h4>
-                            <p class="card-text">Descripción del Taller</p>
-                            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                            <p class="card-text">Docente: </p>
-                            <p class="card-text">Costo: </p>
-                            <p class="card-text">Fecha y hora: </p>
-                            <p class="card-text">Lugar: </p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn-primary mb-3 info">PREINSCRIPCIÓN</a>
-                            <a href="#" class="btn-primary mb-3 info">Temario</a>
-                        </div>
+                        <h3 class=" u-MarginTop0 u-MarginBottom10">Estándares de instalación de fibra óptica entre edificios</h3>
+                        <small class="text-uppercase">Docente:  Carlos Cervantes (PANDUIT)</small>
+                        <p class="  u-MarginTop25 u-MarginBottom0 u-LineHeight3">
+                            Fecha: Viernes <b>16</b> de noviembre<br><br>
+                            Única sesión: 3:00 a 5:00 pm<br>
+                        </p>
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+
+            <div class="mx-auto col-lg-4 col-md-6 text-center u-xs-MarginBottom40  a_inversion">
+                <div class="u-BoxShadow100">
+                    <div class="Blurb Blurb--wrapper bg-primary bg-primary--gradient--ciis u-BorderRadius6">
+                        <div class="u-FontSize50 u-Weight700 img-with">
+                            <img class="card-img-top img-fluid" src="../images/robotica-taller.png" alt="Card image cap">
+                        </div>
+                        <h3 class="u-MarginTop15 u-MarginBottom10">Iniciación en la Robótica</h3>
+                        <small class="text-uppercase">Docente: Ricardo Pérez Sánchez</small>
+                        <p class="u-MarginTop20 u-MarginBottom5 u-LineHeight3">
+                            Fecha: Miércoles <b>14</b> de noviembre<br>
+                            Primera sesión: 9:30 a 11:30 am<br><br>
+                            Fecha: Jueves <b>15</b> de noviembre<br>
+                            Segunda sesión: 9:30 a 11:30 am
+                        </p>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="mx-auto col-lg-4 col-md-6 text-center col-md-offset-0  col-sm-offset-3 u-xs-MarginBottom40  a_inversion">
+                <div class="u-BoxShadow100">
+                    <div class="Blurb Blurb--wrapper bg-primary bg-primary--gradient--ciis u-BorderRadius6">
+                        <div class="u-FontSize u-Weight700 img-with">
+                            <img class="card-img-top img-fluid" src="../images/gps.jpg" alt="Card image cap">
+                        </div>
+                        <h4 class="u-MarginTop5">Sistema de navegación autónoma para robótica móvil con GPS y magnetómetro</h4>
+                        <small class="text-uppercase">Docente: Sergio Hernán Valenzuela Cámara</small>
+                        <p class="  u-MarginTop5 u-MarginBottom0 u-LineHeight3">
+                            Fecha: Miércoles <b>14</b> de noviembre<br>
+                            Primera sesión: 3:00 a 5:00 pm<br>
+                            Segunda sesión: 5:00 a 7:00 pm
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-</div>
+</section>
+
+{{--
+<div class="container-fluid mt-5 mb-5">
+    <div class="container">
+        <h2 class="text-primary text-center pb-3 a_title" id="talleres">Talleres CIIS 2018</h2>
+        <div class="row w-100" style="margin:0 auto">
+            <div class="col-md-4 col-lg-4 mx-auto a_small" >
+                <div class="card">
+                    <div class="zoom">
+                        <img class="card-img-top img-fluid" src="images/fibrajpg.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Estándares de instalación de fibra óptica entre edificios</h4>
+                        <p class="card-text">Docente:  Carlos Cervantes (PANDUIT)</p>
+                        <p class="card-text">Fecha: Viernes 16 de noviembre</p>
+                        <p class="card-text">Hora: 3:00 a 5:00 pm </p>
+                        <p class="card-text">Duración: 1 sesión </p>
+                    </div>
+
+                    <div class="card-footer text-center">
+                        <a href="{{  route('frontend.inscription') }}" class="btn btn-primary info">Inscripción</a>
+                        <a href="#" class="btn-primary mb-3 info">Temario</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mx-auto a_small">
+                <div class="card">
+                    <div class="zoom">
+                        <img class="card-img-top img-fluid mb-4 " src="images/robotica-taller.png" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title mb-3 pb-4 pt-3">Iniciación en la Robótica</h4>
+                        <p class="card-text">Docente: Ricardo Pérez Sánchez</p>
+                        <p class="card-text">Primera sesión</p>
+                        <p class="card-text">Fecha y hora: Miércoles 14 de noviembre de 9:30 am a 11:30 am  </p>
+                        <p class="card-text">Segunda sesión</p>
+                        <p class="card-text">Fecha y hora: Jueves 15 de noviembre de 9:30 am a 11:30 am</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn-primary mb-3 info">PREINSCRIPCIÓN</a>
+                        <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                        Launch demo modal
+                        </a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+</div>--}}

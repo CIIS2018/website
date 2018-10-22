@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="page-footer font-small mdb-color pt-4" style="background-color: #1a1a1a;color: white">
+<footer class="page-footer font-small mdb-color pt-4 text-white" style="background-color: #1a1a1a;color: white">
 
     <!-- Footer Links -->
     <div class="container text-center text-md-left">
@@ -8,9 +8,9 @@
         <div class="row text-center text-md-left mt-3 pb-3">
 
             <!-- Grid column -->
-            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <div class="col-md-3 col-lg-3 col-xl-6 mx-auto mt-3">
                 <h6 class="text-uppercase mb-4 font-weight-bold">CIIS 2018</h6>
-                <p>Evento académico </p>
+                <p class="text-justify">Conoce sobre la analítica de datos, robótica, bioinformática, telemática, ingeniería de software y las ciencias de la computación en el XIX Congreso Internacional de Informática y Sistemas que se realizará del 12 al 16 de noviembre en la Universidad Nacional Jorge Basadre Grohmann.</p>
                 <!-- <img class="" src="images/log-esis.png"> -->
             </div>
             <!-- Grid column -->
@@ -18,21 +18,7 @@
             <hr class="w-100 clearfix d-md-none">
 
             <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <!-- <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
-                <p>
-                    <a href="#!">MDBootstrap</a>
-                </p>
-                <p>
-                    <a href="#!">MDWordPress</a>
-                </p>
-                <p>
-                    <a href="#!">BrandFlow</a>
-                </p>
-                <p>
-                    <a href="#!">Bootstrap Angular</a>
-                </p> -->
-            </div>
+            
             <!-- Grid column -->
 
             <hr class="w-100 clearfix d-md-none">
@@ -67,7 +53,7 @@
                 <p>
                     <i class="fa fa-phone mr-3"></i>947 223842</p>
                 <p>
-                    <i class="fa fa-print mr-3"></i>+51 982531899</p>
+                    <i class="fab fa-whatsapp mr-3"></i>+51 982531899</p>
             </div>
             <!-- Grid column -->
 
@@ -85,7 +71,7 @@
                 <!--Copyright-->
                 <p class="text-center text-md-left">© 2018 Copyright:
                     <a href="">
-                        <strong>Escuela de Ingeniería en informática y Sistemas</strong>
+                        <strong>Escuela Profesional de Ingeniería en Informática y Sistemas</strong>
                     </a>
                 </p>
 
