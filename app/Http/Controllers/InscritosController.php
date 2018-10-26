@@ -14,15 +14,17 @@ class InscritosController extends Controller
 
         $inscritos = Inscritos::get();
         return view('backend.inscritos.list',compact('inscritos'));
+
     }
 
     public function runningMigration(){
+
         Artisan::call('migrate', array('--path' => 'database/migrations/inscritos', '--force' => true));
         return response()->json('Migrate Confirmat');
+
     }
+
     public function create(Request $request){
-
-
         $dataResponse = [
             'nombre' => $request->name,
             'apellido' => $request->lastname,
@@ -38,27 +40,32 @@ class InscritosController extends Controller
             'tipo_inscripcion' => $request->type,
             'confirmado' => 1,
         ];
-        $rules = [
-            'dni' => 'required|max:10|unique:inscritos',
-            'nombre' => 'max:100',
-            'apellido' => 'max:100',
-        ];
-        $messages = [
-            'nombre'    => 'El nombre no esta completado.',
-            'dni'    => 'El dni no esta completado.',
-        ];
-        $validator = Validator::make($dataResponse, $rules, $messages);
-        if ($validator->fails()) {
+
+        $inscrito = false;
+
+        try{
+            if($dataResponse['nombre'] == '' || $dataResponse['apellido'] == '' || $dataResponse['dni'] == ''){
+                new \Exception('Faltan Valores');
+            }else{
+                $inscrito = Inscritos::create($dataResponse);
+            }
+
+        }catch (Exception $e){
+
             return redirect()->route('report.inscritos')
                 ->with('error', TRUE);
+
         }
-        $inscrito = Inscritos::create($dataResponse);
         if($inscrito){
+
             return redirect()->route('report.inscritos')
                 ->with('status', TRUE);
+
         } else {
+
             return redirect()->route('report.inscritos')
                 ->with('error', TRUE);
+
         }
     }
 
