@@ -23,6 +23,12 @@
                         <label for="dni" class="form-control-label">Dni de la persona</label>
                         <input type="text" name="dni" class="form-control">
                     </div>
+    
+                    <div class="form-group">
+                        <label for="phone" class="form-control-label">Celular de la persona</label>
+                        <input type="text" name="phone" class="form-control">
+                    </div>
+                    
                     <div class="form-group">
                         <label for="code" class="form-control-label">Codigo de la persona</label>
                         <input type="text" name="code" class="form-control">
@@ -73,14 +79,11 @@
                         </select>
                     </div>
                     
-                    <div class="form-group">
-                        <label for="phone" class="form-control-label">Celular de la persona</label>
-                        <input type="text" name="phone" class="form-control">
-                    </div>
+                    
                     
                     <div class="modal-footer">
                         <button class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                        <button class="btn btn-primary" type="submit">Agregar Persona</button>
+                        <button class="btn btn-primary" type="submit">Agregar Inscrito</button>
                     </div>
                 </form>
             </div>

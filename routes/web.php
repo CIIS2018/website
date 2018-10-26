@@ -30,6 +30,9 @@ Route::group(['prefix' => 'admin'], function () {
 
     Route::post('/reporte/inscritos','InscritosController@create');
 
+    Route::get('/reporte/inscritos/mostrar/{id}','InscritosController@show')->name('report.inscritos.show');
+
+    Route::post('/reporte/inscritos/{id}','InscritosController@update')->name('report.inscritos.update');
 
     Route::get('/registrados/confirmar/{id}','RegistradosController@confirmateStudent');
 

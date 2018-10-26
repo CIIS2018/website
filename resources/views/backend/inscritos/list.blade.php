@@ -21,14 +21,14 @@
             @if (session('error'))
                 <div class="alert alert-danger" role="alert">
                     <ul>
-                        <li>UN ERROR A OCURRIDO NO REGISTRADO</li>
+                        <li>UN ERROR A OCURRIDO</li>
                     </ul>
                 </div>
             @endif
             @if (session('status'))
                 <div class="alert alert-success" role="alert">
                     <ul>
-                        <li>REGISTRADO</li>
+                        <li>CORRECTO</li>
                     </ul>
                 </div>
             @endif
@@ -61,9 +61,9 @@
                                 <td>{{$inscrito->email}}</td>
                                 <td>{{$inscrito->codigo}}</td>
                                 <td>
-                                    <button type="button" href="details.html" class="btn btn-outline-primary btn-sm">
+                                    <button type="button" data-id="{{$inscrito->id}}" class="btn btn-outline-primary btn-sm read-inscrito-modal">
                                         <i class="fa fa-eye"></i></button>
-                                    <button type="button" href="details.html" class="btn btn-outline-warning btn-sm">
+                                    <button type="button" data-id="{{$inscrito->id}}"  class="btn btn-outline-warning btn-sm edit-inscrito-modal">
                                         <i class="fa fa-pencil"></i></button>
                                     <button type="button" href="details.html" data-id="{{$inscrito->id}}" class="btn btn-outline-success btn-sm confirmate-student">
                                         Email
@@ -152,6 +152,100 @@
             })
 
         })
+
+        $(".read-inscrito-modal").on("click",function (e) {
+            let id = $(this).data("id");
+            console.log(id)
+            swal({
+                type: 'info',
+                title: 'Cargando ...',
+                showCancelButton: false,
+                showConfirmButton: false
+            });
+            swal.showLoading();
+            $.ajax({
+                url: '/admin/reporte/inscritos/mostrar/' + id,
+                type: 'GET',
+                success: function (data) {
+                    $("[name='nameShow']").val(data.nombre)
+                    $("[name='lastnameShow']").val(data.apellido)
+                    $("[name='cityShow']").val(data.ciudad)
+                    $("[name='codeShow']").val(data.codigo)
+                    $("[name='descountShow']").val(data.descuento)
+                    $("[name='dniShow']").val(data.dni)
+                    $("[name='modeShow']").val(data.modo_pago)
+                    $("[name='typeShow']").val(data.tipo_inscripcion)
+                    $("[name='emailShow']").val(data.email)
+                    $("[name='phoneShow']").val(data.celular)
+                    $("[name='payShow']").val(data.pago)
+                    $("[name='instituteShow']").val(data.institucion)
+                    swal({
+                        type: 'success',
+                        title: 'Datos cargados',
+                        showCancelButton: false,
+                        showConfirmButton: false
+                    });
+                    swal.close();
+                    swal.hideLoading();
+                    console.log(data)
+                    $('#showInscritoModal').modal('show')
+                },
+                error: function (e) {
+                    console.log(e);
+                    swal({
+                        type: 'error',
+                        title: 'Un error a ocurrido',
+                    });
+                }
+            })
+        })
+
+        $(".edit-inscrito-modal").on("click",function (e) {
+            let id = $(this).data("id");
+            console.log(id)
+            swal({
+                type: 'info',
+                title: 'Cargando ...',
+                showCancelButton: false,
+                showConfirmButton: false
+            });
+            $.ajax({
+                url: '/admin/reporte/inscritos/mostrar/' + id,
+                type: 'GET',
+                success: function (data) {
+                    $('#editInscritoModal form').attr('action','/admin/reporte/inscritos/'+data.id);
+                    $("[name='nameEdit']").val(data.nombre)
+                    $("[name='lastnameEdit']").val(data.apellido)
+                    $("[name='cityEdit']").val(data.ciudad)
+                    $("[name='codeEdit']").val(data.codigo)
+                    $("[name='descountEdit']").val(data.descuento)
+                    $("[name='dniEdit']").val(data.dni)
+                    $("[name='modeEdit']").val(data.modo_pago)
+                    $("[name='typeEdit']").val(data.tipo_inscripcion)
+                    $("[name='emailEdit']").val(data.email)
+                    $("[name='phoneEdit']").val(data.celular)
+                    $("[name='payEdit']").val(data.pago)
+                    $("[name='instituteEdit']").val(data.institucion)
+                    swal({
+                        type: 'success',
+                        title: 'Datos cargados',
+                        showCancelButton: false,
+                        showConfirmButton: false
+                    });
+                    swal.hideLoading();
+                    swal.close();
+                    console.log(data)
+                    $('#editInscritoModal').modal('show')
+                },
+                error: function (e) {
+                    console.log(e);
+                    swal({
+                        type: 'error',
+                        title: 'Un error a ocurrido',
+                    });
+                }
+            })
+        })
     </script>
 
 
@@ -159,4 +253,7 @@
 
 @section('modal')
     @include('backend.inscritos.includes.register')
+    @include('backend.inscritos.includes.show')
+    @include('backend.inscritos.includes.edit')
+
 @endsection
