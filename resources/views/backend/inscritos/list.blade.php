@@ -8,29 +8,36 @@
 @endsection
 
 @section('header')
-    @include('backend.includes.header')
+    @include('backend.inscritos.includes.header')
 @endsection
 
 @section('content')
-    <!-- Errors-->
-    @if ($errors->any())
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-    @endif
+    
     
     <!-- dependences -->
-    <section id="dependences">
+    <section id="inscritos">
         <div class="container">
+            <!-- Errors-->
+            @if (session('error'))
+                <div class="alert alert-danger" role="alert">
+                    <ul>
+                        <li>UN ERROR A OCURRIDO NO REGISTRADO</li>
+                    </ul>
+                </div>
+            @endif
+            @if (session('status'))
+                <div class="alert alert-success" role="alert">
+                    <ul>
+                        <li>REGISTRADO</li>
+                    </ul>
+                </div>
+            @endif
             <div class="row">
+                
                 <div class="col">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Estudiantes Registrados</h4>
+                            <h4>Lista de inscritos</h4>
                         </div>
                     </div>
                     <br>
@@ -41,32 +48,30 @@
                             <th>Nombre</th>
                             <th>Apellido</th>
                             <th>Email</th>
-                            <th>DNI</th>
-                            <th>Tipo Inscripcion</th>
-                            <th>Imagen</th>
-                            <th>Celular</th>
-                            <th>QR</th>
-                            <th>Confirmar</th>
-
+                            <th>Codigo</th>
+                            <th>Accion</th>
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach($students as $key => $student)
+                        @foreach($inscritos as $key => $inscrito)
                             <tr>
-                                <td>{{$student->id}}</td>
-                                <td style="text-transform: uppercase">{{$student->nombre}}</td>
-                                <td>{{$student->apellido}}</td>
-                                <td>{{$student->email}}</td>
-                                <td>{{$student->dni}}</td>
-                                <td>{{$student->tipo_inscripcion}}</td>
-                                <td> <button class="image-student" data-toggle="modal" data-target="#myModal{{$student->id}}">Ver Imagen</button></td>
-                                <td>{{$student->celular}}</td>
-                                <td><button>Ver QR</button></td>
-                                <td><button class="confirmate-student" data-id="{{$student->id}}">Confirmar</button></td>
-
+                                <td>{{$inscrito->id}}</td>
+                                <td style="text-transform: uppercase">{{$inscrito->nombre}}</td>
+                                <td style="text-transform: uppercase">{{$inscrito->apellido}}</td>
+                                <td>{{$inscrito->email}}</td>
+                                <td>{{$inscrito->codigo}}</td>
+                                <td>
+                                    <button type="button" href="details.html" class="btn btn-outline-primary btn-sm">
+                                        <i class="fa fa-eye"></i></button>
+                                    <button type="button" href="details.html" class="btn btn-outline-warning btn-sm">
+                                        <i class="fa fa-pencil"></i></button>
+                                    <button type="button" href="details.html" data-id="{{$inscrito->id}}" class="btn btn-outline-success btn-sm confirmate-student">
+                                        Email
+                                    </button>
+                                </td>
                             </tr>
-
-
+                            
+                            
                             {{--<div class="modal" id="myModal{{$student->id}}">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
@@ -114,7 +119,7 @@
     <script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.html5.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.print.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.colVis.min.js"></script>
-
+    
     <script src="https://unpkg.com/sweetalert2@7.20.3/dist/sweetalert2.all.js"></script>
     
     <script type="text/javascript">
@@ -125,8 +130,8 @@
             });
             console.log()
         })
-        
-        $(".confirmate-student").on("click",function (e) {
+
+        $(".confirmate-student").on("click", function (e) {
             let idStudent = $(this).data("id");
             console.log(idStudent)
             swal('Enviando correo');
@@ -136,7 +141,7 @@
                 type: 'GET',
                 success: function (data) {
                     swal.hideLoading();
-                    console.log('correo enviado',data);
+                    console.log('correo enviado', data);
                     if (data.status === 'OK') {
                         swal({
                             type: 'success',
@@ -152,9 +157,13 @@
                     });
                 }
             })
-            
+
         })
     </script>
 
 
+@endsection
+
+@section('modal')
+    @include('backend.inscritos.includes.register')
 @endsection

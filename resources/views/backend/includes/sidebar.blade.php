@@ -9,7 +9,9 @@
                 <li class="nav-item px-2">
                     <a href="/admin/reporte/estudiantes" class="nav-link">Estudiantes</a>
                 </li>
-                
+                <li class="nav-item px-2">
+                    <a href="/admin/reporte/inscritos" class="nav-link">Inscritos</a>
+                </li>
             </ul>
             
             

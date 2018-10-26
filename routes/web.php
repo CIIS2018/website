@@ -24,6 +24,13 @@ Route::group(['prefix' => 'admin'], function () {
 
     Route::get('/reporte/registrados','RegistradosController@renderReportTable')->name('report.registrados');
 
+//    Route::get('/reporte/inscritos','InscritosController@runningMigration')->name('report.inscritos');
+
+    Route::get('/reporte/inscritos','InscritosController@list')->name('report.inscritos');
+
+    Route::post('/reporte/inscritos','InscritosController@create');
+
+
     Route::get('/registrados/confirmar/{id}','RegistradosController@confirmateStudent');
 
 

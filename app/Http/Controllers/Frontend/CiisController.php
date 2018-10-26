@@ -25,10 +25,6 @@ class CiisController extends Controller
         return view('frontend.inscription.inscription');
     }
 
-    
-    
-   
-    
     public function registerInscription(Request $request)
     {
 
