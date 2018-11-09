@@ -15,6 +15,6 @@ class Schedules extends Model
 
     public function students()
     {
-        return $this->belongsToMany(Students::class, 'assistence','schedules_id','students_id')->withPivot('date_assistence')->withTimestamps();
+        return $this->belongsToMany(Inscritos::class, 'assistence','schedules_id','students_id')->withPivot('date_assistence')->withTimestamps();
     }
 }

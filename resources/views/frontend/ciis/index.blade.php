@@ -4,10 +4,10 @@
 
 @section('content')
     
-    @include('frontend.includes.header')
+    {{-- @include('frontend.includes.header') --}}
     <!--TERMINOS EL HEADER-->
     <!--COMIENSO DE INFORMACION-->
-    
+    @include('frontend.includes.header2')
     <!-- Card Regular -->
     @include('frontend.presenter.presenters')
     

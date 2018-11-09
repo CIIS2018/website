@@ -8,7 +8,7 @@
 
 @section('content')
 <div class="container-fluid bg-primary" style="padding-top: 3%;padding-bottom: 3%;padding-left:15%; padding-right:15%">
-    <div class="container bg-white" style="margin:0 auto;padding:5%">
+    <div class="container bg-white mt-xl-5" style="margin:0 auto;padding:5%">
         <h2 class="text-primary mb-3">Inscripción</h2>
         <h4 class="mb-3" style="font-size: 11pt;">Asegura tu lugar en el XIX Congreso Internacional de Informática y Sistemas e inscribete</h4>
         <h4 class="mb-3" style="font-size: 11pt;color:green">*Escribe tus nombres y apellidos completos</h4>
@@ -67,7 +67,7 @@
 
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mb-2">
-                    <label for="exampleFormControlFile1">Foto del voucher</label>
+                    <label for="exampleFormControlFile1" style="color:black;">Foto del voucher(en formato jpeg/jpg/png)</label>
                     <input type="file" class="form-control-file" id="fotovoucher"  name="fotovoucher">
                     <div class="form-control-feedback" style="display: none;color: red" id="alerta-imagen"></div>
                 </div>

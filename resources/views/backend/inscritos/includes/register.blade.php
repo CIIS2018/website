@@ -11,74 +11,97 @@
             <div class="modal-body">
                 <form method='POST' action="{{route('report.inscritos')}}" enctype="multipart/form-data">
                     @csrf
-                    <div class="form-group">
-                        <label for="name" class="form-control-label">Nombre de la persona</label>
-                        <input type="text" name="name" class="form-control">
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="name" class="form-control-label">Nombre de la persona</label>
+                            <input type="text" name="name" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastname" class="form-control-label">Apellido de la persona</label>
+                            <input type="text" name="lastname" class="form-control">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="lastname" class="form-control-label">Apellido de la persona</label>
-                        <input type="text" name="lastname" class="form-control">
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="dni" class="form-control-label">Dni de la persona</label>
+                            <input type="text" name="dni" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="phone" class="form-control-label">Celular de la persona</label>
+                            <input type="text" name="phone" class="form-control">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="dni" class="form-control-label">Dni de la persona</label>
-                        <input type="text" name="dni" class="form-control">
-                    </div>
-    
-                    <div class="form-group">
-                        <label for="phone" class="form-control-label">Celular de la persona</label>
-                        <input type="text" name="phone" class="form-control">
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="code" class="form-control-label">Codigo de la persona</label>
+                            <input type="text" name="code" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="city" class="form-control-label">Ciudad de la persona</label>
+                            <input type="text" name="city" class="form-control">
+                        </div>
                     </div>
                     
-                    <div class="form-group">
-                        <label for="code" class="form-control-label">Codigo de la persona</label>
-                        <input type="text" name="code" class="form-control">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="institute" class="form-control-label">Institución de la persona</label>
+                            <input type="text" name="institute" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="email" class="form-control-label">Email de la persona</label>
+                            <input type="text" name="email" class="form-control">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="city" class="form-control-label">Ciudad de la persona</label>
-                        <input type="text" name="city" class="form-control">
-                    </div>
-    
-                    <div class="form-group">
-                        <label for="institute" class="form-control-label">Institución de la persona</label>
-                        <input type="text" name="institute" class="form-control">
-                    </div>
-    
-                    <div class="form-group">
-                        <label for="email" class="form-control-label">Email de la persona</label>
-                        <input type="text" name="email" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="pay" class="form-control-label">Pago de la persona</label>
-                        <input type="text" name="pay" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="mode" class="form-control-label">Modo de pago</label>
-                        <select class="form-control" name="mode">
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="pay" class="form-control-label">Pago de la persona</label>
+                            <input type="text" name="pay" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="mode" class="form-control-label">Modo de pago</label>
+                                 <select class="form-control" name="mode">
                             <option value="miriam" selected>Miriam</option>
                             <option value="web">Web</option>
-                        </select>
+                            </select>
+                        </div>
                     </div>
+
     
-                    <div class="form-group">
-                        <label for="type" class="form-control-label">Tipo de Inscripcion</label>
-                        <select class="form-control" name="type">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="type" class="form-control-label">Tipo de Inscripcion </label>
+                        <select class="form-control" name="type" id="texto_test">
+                            {{-- <option value="" selected disabled hidden>Escoger tipo de inscripcion</option> --}}
+                            <option selected>Escoger </option>
                             <option value="profesional" >Profesional</option>
                             <option value="estudiante">Estudiante</option>
-                            <option value="esis">Esis</option>
-                            <option value="delegacion" selected>Delegación</option>
-
+				<option value="egresado_esis">Egresado Esis</option>
+			<option value="beca">Beca</option>
+			<option value="semibeca_profesional">Semibeca profesional</option>
+			<option value="semibeca_estudiante">Semibeca estudiante</option>
+			<option value="docente_esis">Docente esis</option>
+                            <option value="estudiante_esis">Estudiante esis</option>
+                            <option value="delegacion1" >Delegación 80</option>
+                            <option value="delegacion2" >Delegación 85</option>
+                            <option value="delegacion3" >Delegación 90</option>
+                            <option value="delegacion4" >Delegación 95</option>
+ <option value="agosto" >Promo agosto</option>
                         </select>
-                    </div>
-    
-                    <div class="form-group">
-                        <label for="descount" class="form-control-label">Tipo de Descuento</label>
+
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="descount" class="form-control-label">Tipo de Descuento</label>
                         <select class="form-control" name="descount">
                             <option selected>Descuento</option>
                             <option value="beca">Beca</option>
                             <option value="semibeca">Semibeca</option>
                         </select>
-                    </div>
-                    
+                        </div>
+                    </div>                
                     
                     
                     <div class="modal-footer">

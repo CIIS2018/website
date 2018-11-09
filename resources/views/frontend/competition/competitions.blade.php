@@ -36,7 +36,7 @@
                                 Fecha:
                             </div>
                             <div class="p-1">
-                                Jueves 15 de noviembre
+                                Miércoles 14 de noviembre
                             </div>
                         </div>
                         <div class="d-flex flex-row justify-content-center">
@@ -72,7 +72,7 @@
                                 Fecha:
                             </div>
                             <div class="p-1">
-                                Viernes 16 de noviembre
+                                Jueves 15 de noviembre
                             </div>
                         </div>
                         <div class="d-flex flex-row justify-content-center">
@@ -80,11 +80,11 @@
                                 Hora:
                             </div>
                             <div class="p-1">
-                                12:00 pm
+                                2:00 pm
                             </div>
                         </div>
                         {{-- <p>Más información pronto</p> --}}
-                        <a class="btn btn-primary text-white" alt="_blank" href="pdf/Bases-del-concurso-de-robotica-minisumos.pdf"><i class="far fa-file-pdf"></i> Descargar bases </a>
+                        <a class="btn btn-primary text-white" alt="_blank" href="pdf/Bases-del-concurso-de-robótica-minisumos.pdf"><i class="far fa-file-pdf"></i> Descargar bases </a>
                     </div>
                 </div>
             </div>
@@ -108,7 +108,7 @@
                                 Fecha:
                             </div>
                             <div class="p-1">
-                                Miércoles 14 de noviembre
+                                Martes 13 de noviembre
                             </div>
                         </div>
                         <div class="d-flex flex-row justify-content-center">
@@ -116,7 +116,7 @@
                                 Hora:
                             </div>
                             <div class="p-1">
-                                12:00 pm
+                                2:00 pm
                             </div>
                         </div>
                         {{-- <p>Más información pronto</p> --}}

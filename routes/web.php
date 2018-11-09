@@ -20,21 +20,43 @@ Route::group(['prefix' => 'admin'], function () {
 
     Route::get('/reporte/asistencia','AssistenceController@renderReportTable')->name('report.assistence');
 
+Route::get('/reporte/inscritos/imprimir/{id}', 'InscritosController@imprimir')->name('imprimir');
+
+
     Route::get('/reporte/estudiantes','StudentsController@renderReportTable')->name('report.student');
 
     Route::get('/reporte/registrados','RegistradosController@renderReportTable')->name('report.registrados');
 
-//    Route::get('/reporte/inscritos','InscritosController@runningMigration')->name('report.inscritos');
+    Route::get('/registrados/confirmar/{id}','RegistradosController@confirmateStudent');
 
-    Route::get('/reporte/inscritos','InscritosController@list')->name('report.inscritos');
+    Route::get('/reporte/registrados/mostrar/{id}','RegistradosController@show')->name('report.registrados.show');
 
+    Route::post('/reporte/registrados/{id}/pago','RegistradosController@updatePay')->name('report.registrados.update.pay');
+
+    Route::post('/reporte/registrados/{id}','RegistradosController@update')->name('report.registrados.update');
+
+
+ Route::get('/reporte/inscritos','InscritosController@list')->name('report.inscritos');
     Route::post('/reporte/inscritos','InscritosController@create');
 
-    Route::get('/reporte/inscritos/mostrar/{id}','InscritosController@show')->name('report.inscritos.show');
+    Route::get('/inscritos/confirmar/{id}','InscritosController@confirmateStudent');
 
+
+    Route::get('/reporte/inscritos/mostrar/{id}','InscritosController@show')->name('report.inscritos.show');
     Route::post('/reporte/inscritos/{id}','InscritosController@update')->name('report.inscritos.update');
 
-    Route::get('/registrados/confirmar/{id}','RegistradosController@confirmateStudent');
+
+
+Route::get('/reporte/excel/export', 'ExportController@export');
+Route::get('/reporte/excel/export1', 'ExportController@export01');
+Route::get('/reporte/excel/export2', 'ExportController@export1');
+Route::get('/reporte/excel/export3', 'ExportController@export2');
+Route::get('/reporte/excel', 'ExportController@index')->name('report.excel');
+
+Route::get('/reporte/taller','TallerController@listaTaller')->name('report.inscritosTaller');
+Route::post('/reporte/taller','TallerController@create');
+Route::get('/reporte/taller/mostrar/{id}','TallerController@show')->name('report.inscritosTaller.show');
+Route::post('/reporte/taller/{id}','TallerController@update')->name('report.inscritosTaller.update');
 
 
 

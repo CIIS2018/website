@@ -39,7 +39,7 @@ class RegistradosEmail extends Mailable
                 'name' => $this->data->nombre,
                 'lastname' => $this->data->apellido,
                 'email' => $this->data->email,
-                'institute' => $this->data->instituto
+                'institute' => $this->data->institucion
             ]);
     }
 }

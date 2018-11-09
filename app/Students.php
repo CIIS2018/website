@@ -15,8 +15,8 @@ class Students extends Model
     protected $table = 'students';
 
 
-    public function schedules()
-    {
-        return $this->belongsToMany(Schedules::class, 'assistence','students_id','schedules_id')->withPivot('date_assistence')->withTimestamps();
-    }
+    //public function schedules()
+    //{
+      //  return $this->belongsToMany(Schedules::class, 'assistence','students_id','schedules_id')->withPivot('date_assistence')->withTimestamps();
+    //}
 }

@@ -8,6 +8,7 @@ use App\Students;
 use App\Schedules;
 use Illuminate\Support\Carbon;
 use DateTimeZone;
+use App\Inscritos;
 class AssistenceController extends Controller
 {
     /**
@@ -20,12 +21,12 @@ class AssistenceController extends Controller
         //
     }
 
-    public function student(Request $request)
+   public function student(Request $request)
     {
         //
         $id = $request->id;
         //$horario = $request->horario;
-        $student = Students::find($id);
+        $student = Inscritos::find($id);
         if(count($student) === 0) return response()->json([
             'status'=>'error',
             'estudiante'=>'desconocido',
@@ -36,12 +37,12 @@ class AssistenceController extends Controller
         $hour = $getData->hour;
         if($hour >  7 && $hour < 13){
             $horario = 2;
-        }else if($hour > 13 && $hour < 21){
+        }else if($hour > 13 && $hour < 22){
             $horario = 1;
         }else {
             return response()->json([
                 'status'=>'error',
-                'estudiante'=> $student->name ,
+                'estudiante'=> $student->nombre ,
                 'turno'=> "No permitido",
                 'message'=>'Horario no permitido',
             ],421 );
@@ -61,7 +62,7 @@ class AssistenceController extends Controller
             
             return response()->json([
                 'status'=>'warning',
-                'estudiante'=>$student->name ,
+                'estudiante'=>$student->nombre ,
                 'turno'=>$schedule->name,
                 'message'=>'Estudiante ya ha sido registrado',
             ],421 );
@@ -74,7 +75,7 @@ class AssistenceController extends Controller
             );
             return response()->json([
                 'status'=>'success',
-                'estudiante'=>$student->name ,
+                'estudiante'=>$student->nombre ,
                 'turno'=>$schedule->name,
                 'message'=>'Estudiante registrado en la asistencia',
             ],200 );;

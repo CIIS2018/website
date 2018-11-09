@@ -4,7 +4,8 @@
         <li data-target="#carouselCiis" data-slide-to="0" class="active"></li>
         <li data-target="#carouselCiis" data-slide-to="1"></li>
         <li data-target="#carouselCiis" data-slide-to="2"></li>
-        {{-- <li data-target="#carouselCiis" data-slide-to="3"></li> --}}
+        <li data-target="#carouselCiis" data-slide-to="3"></li>
+        <li data-target="#carouselCiis" data-slide-to="4"></li>
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
@@ -48,6 +49,30 @@
                 </div>        
             </div>
         </div>
+
+        <div class="carousel-item ">
+            <img class="d-block w-100" src="../images/banner/banner_talleres_v2.jpeg" alt="Third slide">
+            <div class="carousel-caption d-md-block">
+                <div class="d-flex align-items-center">
+                </div>        
+            </div>
+        </div>
+        
+        <div class="carousel-item ">
+            <img class="d-block w-100" src="../images/banner/banner_concursos.jpeg" alt="Fourth slide">
+            <div class="carousel-caption d-md-block">
+                <div class="d-flex align-items-center">
+                </div>        
+            </div>
+        </div>
+        
+        <div class="carousel-item ">
+            <img class="d-block w-100" src="../images/banner/banner_tacna.jpeg" alt="fifth slide">
+            <div class="carousel-caption d-md-block">
+                <div class="d-flex align-items-center">
+                </div>        
+            </div>
+        </div>
         
 <!--
         <div class="carousel-item">
@@ -67,7 +92,7 @@
         </div>
 -->
 
-        <div class="carousel-item ">
+        <!-- <div class="carousel-item ">
             <img class="d-block w-100" src="../images/banner/dos.png" alt="Third slide">
             <div class="carousel-caption d-md-block">
                 <div class="d-flex align-items-center">
@@ -79,7 +104,8 @@
                     </span>
                 </div>        
             </div>
-        </div>        
+        </div> -->
+
     </div>
     <a class="carousel-control-prev" href="#carouselCiis" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -91,26 +117,6 @@
     </a>
 </div>
 <!--fin slider-->
-
-<!--
-   <div class="container-fluid header">
-    <div class="container">
-        <div class="header__contenido d-flex align-items-center">
-            <span>
-                <h1 class="header__titulo titulo--white">
-                    <span class="titulo--blue"> XIX CONGRESO INTERNACIONAL</span>
-                    <br/> DE INFORMÁTICA Y SISTEMAS</h1>
-                <h2 class="header__titulo titulo--white" style="font-size:12pt;font-weight: 500">Gestión del conocimiento e innovación tecnológica</h2>
-                <h3 class="header__titulo titulo--white" style="font-size:12pt;font-weight: 500">Del 12 al 16 de noviembre </h3>
-
-                <li class="header__boton">
-                    <a class="header__boton--principal" href="{{ route('frontend.inscription') }}">Inscripciones</a>
-                </li>
-            </span>
-        </div>
-
-    </div>
-</div>-->
 
 <!--TERMINOS EL HEADER-->
 <!--COMIENSO DE INFORMACION-->
@@ -128,10 +134,9 @@
                 </h2>
                 <p></p>
             </article>
-            <div class="col-sm-12 col-md-6 mb-2 d-flex align-items-center">
+            <div class="col-sm-12 col-md-6 mb-2 d-flex align-items-center ">
                 <div class="embed-responsive embed-responsive-16by9">
-                    <iframe width="640" height="360" src="https://www.youtube.com/embed/6bP6ouor0AY" frameborder="0" allow="autoplay; encrypted-media"
-                        allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6bP6ouor0AY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
 
             </div>
@@ -194,17 +199,27 @@
           <h2 class="text-center text-white mt-3 a_title">Beneficios de los participantes</h2>
           <hr>
           <div class="row">
-            <div class="padding-card col-lg-3 col-sm-6 mb-3">
+
+                <div class="padding-card col-lg-3 col-sm-6 mb-3">
+                        <div class="card h-100 rounded a_small Blurb">
+                          <div class="card-body text-center">
+                              <img src="https://image.flaticon.com/icons/svg/201/201576.svg" width="50px">
+                            <h1 class="lead pb-3 mt-3  color-texto">Material de apuntes</h1>
+                            
+                          </div>
+                        </div>
+                      </div>
+
+
+            {{-- <div class="padding-card col-lg-3 col-sm-6 mb-3">
               <div class="card h-100 rounded a_small Blurb">
                 <div class="card-body text-center">
                   <img src="https://image.flaticon.com/icons/svg/326/326935.svg" class="img-fluid rounded" style="width:50px;">
                   <h1 class="lead pb-3 mt-3  color-texto">Acceso a eventos académicos</h1>
-                  {{-- <a class="btn btn-outline-primary get" target="_blank" href="https://coinmarketcap.com/currencies/bitcoin/">
-                                  Test
-                              </a> --}}
+                  
                 </div>
               </div>
-            </div>
+            </div> --}}
       
             <div class="padding-card col-lg-3 col-sm-6 mb-3">
               <div class="card h-100 rounded a_small Blurb">
@@ -241,20 +256,6 @@
                 </div>
               </div>
             </div>
-      
-          </div>
-      
-          <div class="row pb-3">
-      
-            <div class="padding-card col-lg-3 col-sm-6 mb-3">
-              <div class="card h-100 rounded a_small Blurb">
-                <div class="card-body text-center">
-                    <img src="https://image.flaticon.com/icons/svg/201/201576.svg" width="50px">
-                  <h1 class="lead pb-3 mt-3  color-texto">Material de apuntes</h1>
-                  
-                </div>
-              </div>
-            </div>
 
             <div class="padding-card col-lg-3 col-sm-6 mb-3">
                     <div class="card h-100 rounded a_small Blurb">
@@ -268,6 +269,7 @@
                   </div>
       
           </div>
+      
       
         </div>
       </section>

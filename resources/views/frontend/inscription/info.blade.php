@@ -63,53 +63,98 @@
 
 
 <section id="authors" class="my-5 text-center container-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="info-header mb-5">
-                        <h2 class="text-primary pb-3 a_small">
-                            Auspiciadores del XIX CIIS
-                        </h2>
-                       
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                        <div class="owl-carousel owl-theme">
-                                <div class="item">
-                                    <img style="width:60%;height:105px;margin: 0 auto;" src="{{asset('images/auspicios/graficon.png')}}"  />
-                                </div>
-                                <div class="item">
-                                    <img style="width:100%;height:105px;margin: 0 auto;" src="{{asset('images/auspicios/Grupo-Lacume.jpeg')}}"  />
-                                </div>
-                                <div class="item">
-                                    <img style="width:80%;height:105px;margin: 0 auto;" src="{{asset('images/auspicios/logo386.png')}}"  />
-                                </div>
-                                <div class="item">
-                                        <img style="width:100%;height:105px;margin: 0 auto;"  src="{{asset('images/auspiciadores/libreria.jpeg')}}"  />
-                                    </div>
-                                <div class="item">
-                                    <img style="width:90%;height:105px;margin: 0 auto;"  src="{{asset('images/auspicios/copacabana.jpeg')}}" />
-                                </div>
-                                <div class="item">
-                                    <img style="width:80%;height:105px;margin: 0 auto;"  src="{{asset('images/auspicios/platinium.jpeg')}}"  />
-                                </div>
-                                <div class="item">
-                                    <img style="width:80%;height:105px;margin: 0 auto;"  src="{{asset('images/auspicios/holidaysuites.jpg')}}"  />
-                                </div>
-                                
-                                {{-- <div class="item">
-                                    <h4>7</h4>
-                                </div>
-                                <div class="item">
-                                    <h4>8</h4>
-                                </div> --}}
-                            </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="info-header mb-5">
+                    <h2 class="text-primary pb-3 a_small">
+                        Auspiciadores del XIX CIIS
+                    </h2>
+
                 </div>
             </div>
         </div>
-    </section>
+        <div class="row">
+            <div class="col">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img style="width:auto;height:162px;margin: 0 auto;" src="{{asset('images/auspiciadores/1.png')}}"  />
+                    </div>
+                    <div class="item">
+                       <!--mt-sm-3 mt-md-3 mt-lg-4-->
+                        <img style="width:auto;height:162px;margin: 0 auto;" src="{{asset('images/auspiciadores/2.png')}}"  />
+                    </div>
+                    <div class="item">
+                        <img style="width:auto;height:162px;margin: 0 auto;" src="{{asset('images/auspiciadores/3.png')}}"  />
+                    </div>
+                    <div class="item">
+                        <img style="width:auto;height:142px;margin: 0 auto;"  src="{{asset('images/auspiciadores/4.png')}}"  />
+                    </div>
+                    {{-- <div class="item">
+                        <img style="width:auto;height:162px;margin: 0 auto;"  src="{{asset('images/auspiciadores/5.png')}}"  />
+                    </div>
+                    <div class="item">
+                        <img style="width:auto;height:162px;margin: 0 auto;"  src="{{asset('images/auspiciadores/6.png')}}"  />
+                    </div>
+                    <div class="item">
+                        <img style="width:auto;height:162px;margin: 0 auto;"  src="{{asset('images/auspiciadores/7.png')}}"  />
+                    </div>
+                    <div class="item">
+                        <img style="width:auto;height:162px;margin: 0 auto;"  src="{{asset('images/auspiciadores/8.png')}}"  />
+                    </div>
+                    <div class="item">
+                        <img style="width:auto;height:162px;margin: 0 auto;"  src="{{asset('images/auspiciadores/9.png')}}"  />
+                    </div>
+                    <div class="item">
+                        <img style="width:auto;height:162px;margin: 0 auto;"  src="{{asset('images/auspiciadores/10.png')}}"  />
+                    </div>
+                    <div class="item">
+                        <img style="width:auto;height:162px;margin: 0 auto;"  src="{{asset('images/auspiciadores/11.png')}}"  />
+                    </div> --}}
+                    <div class="item">
+                        <img style="width:auto;height:162px;margin: 0 auto;" src="{{asset('images/auspiciadores/12.png')}}"  />
+                    </div>
+                    <div class="item">
+                        <img style="width:auto;height:162px;margin: 0 auto;"  src="{{asset('images/auspiciadores/13.png')}}"  />
+                    </div>
+                    <div class="item">
+                        <img style="width:auto;height:162px;margin: 0 auto;"  src="{{asset('images/auspiciadores/14.png')}}"  />
+                    </div>
+                    <div class="item">
+                        <img style="width:auto;height:162px;margin: 0 auto;"  src="{{asset('images/auspiciadores/15.png')}}"  />
+                    </div>
+                    <div class="item">
+                        <img style="width:auto;height:162px;margin: 0 auto;"  src="{{asset('images/auspiciadores/16.png')}}"  />
+                    </div>
+                    <div class="item">
+                        <img style="width:auto;height:162px;margin: 0 auto;"  src="{{asset('images/auspiciadores/17.png')}}"  />
+                    </div>
+                    <div class="item">
+                        <img style="width:auto;height:162px;margin: 0 auto;"  src="{{asset('images/auspiciadores/18.png')}}" />
+                    </div>
+                    <div class="item">
+                        <img style="width:auto;height:162px;margin: 0 auto;"  src="{{asset('images/auspiciadores/19.png')}}"  />
+                    </div>
+                    <div class="item">
+                        <img style="width:auto;height:162px;margin: 0 auto;"  src="{{asset('images/auspiciadores/20.png')}}"  />
+                    </div>
+                    {{-- <div class="item">
+                        <img style="width:auto;height:162px;margin: 0 auto;"  src="{{asset('images/auspiciadores/21.png')}}"  />
+                    </div> --}}
+                    <div class="item">
+                        <img style="width:auto;height:162px;margin: 0 auto;"  src="{{asset('images/auspiciadores/esdit.jpg')}}"  />
+                    </div>
+                    <div class="item">
+                        <img style="width:auto;height:162px;margin: 0 auto;"  src="{{asset('images/auspiciadores/egatur.jpg')}}"  />
+                    </div>
+                    <div class="item">
+                        <img style="width:auto;height:162px;margin: 0 auto;"  src="{{asset('images/auspiciadores/colegio_ingenieros.png')}}"  />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
     <script>
@@ -185,7 +230,7 @@
                 <div class="card" style="border: none">
                     <div class="card-body">
                     <img class="img-fluid mb-3" src="{{asset('images/auspicios/copacabana.jpeg')}}" alt="" class="img-fluid mb-3">
-                        
+                    </div>   
                 </div>
             </div>
             

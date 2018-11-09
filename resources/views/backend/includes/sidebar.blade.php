@@ -12,6 +12,10 @@
                 <li class="nav-item px-2">
                     <a href="/admin/reporte/inscritos" class="nav-link">Inscritos</a>
                 </li>
+<li class="nav-item px-2">
+                    <a href="/admin/reporte/registrados" class="nav-link">Registrados</a>
+                </li>
+
             </ul>
             
             

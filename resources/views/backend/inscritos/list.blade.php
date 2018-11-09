@@ -47,8 +47,9 @@
                             <th>ID#</th>
                             <th>Nombre</th>
                             <th>Apellido</th>
-                            <th>Email</th>
-                            <th>Codigo</th>
+                            <th>Instituci�n</th>
+			    <th>Tipo</th>
+                            <th>Pago</th>
                             <th>Accion</th>
                         </tr>
                         </thead>
@@ -58,14 +59,19 @@
                                 <td>{{$inscrito->id}}</td>
                                 <td style="text-transform: uppercase">{{$inscrito->nombre}}</td>
                                 <td style="text-transform: uppercase">{{$inscrito->apellido}}</td>
-                                <td>{{$inscrito->email}}</td>
-                                <td>{{$inscrito->codigo}}</td>
+                                <td>{{$inscrito->institucion}}</td>
+				<td>{{$inscrito->tipo_inscripcion}}</td>
+
+                                <td>{{$inscrito->pago}}</td>
+				
                                 <td>
                                     <button type="button" data-id="{{$inscrito->id}}" class="btn btn-outline-primary btn-sm read-inscrito-modal">
                                         <i class="fa fa-eye"></i></button>
                                     <button type="button" data-id="{{$inscrito->id}}"  class="btn btn-outline-warning btn-sm edit-inscrito-modal">
                                         <i class="fa fa-pencil"></i></button>
-                                    <button type="button" href="details.html" data-id="{{$inscrito->id}}" class="btn btn-outline-success btn-sm confirmate-student">
+ <a class="btn btn-primary btn-xs" href="{{action('InscritosController@imprimir', $inscrito->id)}}" ><span class="glyphicon glyphicon-pencil"></span>Imprimir</a>
+
+                                    <button type="button" data-id="{{$inscrito->id}}" class="btn btn-outline-success btn-sm confirmate-student">
                                         Email
                                     </button>
                                 </td>
@@ -111,18 +117,138 @@
     <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/2.2.1/js/dataTables.responsive.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/2.2.1/js/responsive.bootstrap4.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.5.1/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.bootstrap4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.print.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.colVis.min.js"></script>
+  
     
     
     <script src="https://unpkg.com/sweetalert2@7.20.3/dist/sweetalert2.all.js"></script>
     
     <script type="text/javascript">
 
+        $("[name='typeEdit']").on('change', function() {
+            var valor=this.value;
+            console.log(valor);
+            // var cien=100;
+            if(valor==='estudiante'){
+                $("[name='payEdit']").val('100');
+            }
+            else if(valor==='estudiante_esis'){
+                $("[name='payEdit']").val('50');
+            }
+            else if(valor==='profesional'){
+                $("[name='payEdit']").val('150');
+            }
+	    else if(valor==='egresado_esis'){
+                $("[name='payEdit']").val('120');
+            }
+		else if(valor==='beca'){
+                $("[name='payEdit']").val('0');
+            }
+		else if(valor==='semibeca_profesional'){
+                $("[name='payEdit']").val('75');
+            }
+		else if(valor==='semibeca_estudiante'){
+                $("[name='payEdit']").val('50');
+            }
+		else if(valor==='docente_esis'){
+                $("[name='payEdit']").val('100');
+            }
+
+            else if(valor==='delegacion1'){
+                $("[name='payEdit']").val('80');
+            }
+            else if(valor==='delegacion2'){
+                $("[name='payEdit']").val('85');
+            }
+            else if(valor==='delegacion3'){
+                $("[name='payEdit']").val('90');
+            }
+            else if(valor==='delegacion4'){
+                $("[name='payEdit']").val('95');
+            }
+else if(valor==='agosto'){
+                $("[name='payEdit']").val('80');
+            }
+
+            else{
+
+            }
+        })
+
+
+        $('#texto_test').on('change', function() {
+//   alert( this.value );
+            var valor=this.value;
+            console.log(valor);
+            if(valor==='estudiante'){
+                $("[name='pay']").val('100');
+            }
+            else if(valor==='estudiante_esis'){
+                $("[name='pay']").val('50');
+            }
+            else if(valor==='profesional'){
+                $("[name='pay']").val('150');
+            }
+else if(valor==='egresado_esis'){
+                $("[name='pay']").val('120');
+            }
+else if(valor==='beca'){
+                $("[name='pay']").val('0');
+            }
+else if(valor==='semibeca_profesional'){
+                $("[name='pay']").val('75');
+            }
+
+else if(valor==='semibeca_estudiante'){
+                $("[name='pay']").val('50');
+            }
+
+else if(valor==='docente_esis'){
+                $("[name='pay']").val('100');
+            }
+
+            else if(valor==='delegacion1'){
+                $("[name='pay']").val('80');
+            }
+            else if(valor==='delegacion2'){
+                $("[name='pay']").val('85');
+            }
+            else if(valor==='delegacion3'){
+                $("[name='pay']").val('90');
+            }
+            else if(valor==='delegacion4'){
+                $("[name='pay']").val('95');
+            }
+ else if(valor==='agosto'){
+                $("[name='pay']").val('80');
+            }
+
+            else{
+
+            }
+});
+
         $(document).ready(function () {
             var studentTable = $('#studentTable').DataTable({
                 lengthChange: false,
+                buttons: ['copy', 'excel', 'pdf', 'colvis'],
+language: {
+                    "search":'Buscar'
+        }
             });
+
+                studentTable.buttons().container()
+        .appendTo('#studentTable_wrapper .col-md-6:eq(0)');
             console.log()
         })
+
 
         $(".confirmate-student").on("click", function (e) {
             let idStudent = $(this).data("id");
@@ -130,7 +256,7 @@
             swal('Enviando correo');
             swal.showLoading();
             $.ajax({
-                url: '/admin/registrados/confirmar/' + idStudent,
+                url: '/admin/inscritos/confirmar/' + idStudent,
                 type: 'GET',
                 success: function (data) {
                     swal.hideLoading();
@@ -150,9 +276,7 @@
                     });
                 }
             })
-
         })
-
         $(".read-inscrito-modal").on("click",function (e) {
             let id = $(this).data("id");
             console.log(id)
@@ -179,6 +303,8 @@
                     $("[name='phoneShow']").val(data.celular)
                     $("[name='payShow']").val(data.pago)
                     $("[name='instituteShow']").val(data.institucion)
+                    elementDynamically.getUser(data.user)
+
                     swal({
                         type: 'success',
                         title: 'Datos cargados',
@@ -199,7 +325,6 @@
                 }
             })
         })
-
         $(".edit-inscrito-modal").on("click",function (e) {
             let id = $(this).data("id");
             console.log(id)
@@ -226,6 +351,8 @@
                     $("[name='phoneEdit']").val(data.celular)
                     $("[name='payEdit']").val(data.pago)
                     $("[name='instituteEdit']").val(data.institucion)
+                    elementDynamically.getUser(data.user)
+
                     swal({
                         type: 'success',
                         title: 'Datos cargados',
@@ -246,6 +373,33 @@
                 }
             })
         })
+
+
+        const elementDynamically = function () {
+
+            const getUser = function (user) {
+                const userDivModal = document.getElementById('div-user-modal');
+                if(userDivModal != null){
+                    userDivModal.parentNode.removeChild(userDivModal);
+
+                }
+                if(user) {
+                    const { name, email } = user;
+                    console.log(name, email)
+                    const userDiv = document.createElement('div');
+                    userDiv.setAttribute('id','div-user-modal')
+                    const nameElem = document.createElement('h5');
+                    nameElem.textContent = 'Ultimo usuario que modifico ' + name + ' con email ' + email;
+                    userDiv.appendChild(nameElem);
+                    document.querySelector("#editar_inscrito").parentNode.parentNode.append(userDiv)
+                }
+            }
+            return {
+                getUser
+            }
+
+        }()
+
     </script>
 
 
