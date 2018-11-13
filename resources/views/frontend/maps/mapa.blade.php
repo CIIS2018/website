@@ -29,12 +29,18 @@
             </h2>
         </div>
         <div class="row">
-            <div class="col-sm-6 col-md-4 ml-auto text-center">
-                <img class="img-fluid height-200" src="{{asset('images/uni-jmArguedas.jpg')}}" />
-                <!--height: 200px;width:80%-->
+            <!--height: 200px;width:80%-->
+            <div class="col-sm-6 col-md-4 col-lg-3 m-auto pb-3 text-center">
+                <img class="img-fluid height-200" title="Universidad Nacional José María Arguedas" src="{{asset('images/uni-jmArguedas.jpg')}}" />
             </div>
-            <div class="col-sm-6 col-md-4 mr-auto text-center">
-                <img  class="img-fluid height-200" src="{{asset('images/logo-universidad-nacional-del-altiplano.png')}}" />
+            <div class="col-sm-6 col-md-4 col-lg-3 m-auto pb-3 text-center">
+                <img  class="img-fluid height-200" title="Universidad Nacional del Altiplano de Puno" src="{{asset('images/logo-universidad-nacional-del-altiplano.png')}}" />
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 m-auto pb-3 text-center">
+                <img class="img-fluid height-200" title="Universidad Andina Néstor Cáceres Velásquez" src="{{asset('images/universidad-andina-nestor-caceres-velasquez.png')}}" />
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 m-auto pb-3 text-center">
+                <img class="img-fluid height-200" title="Universidad Nacional Daniel Alcides Carrión" src="{{asset('images/universidad-nacional-daniel-alcides-carrion.jpg')}}" />
             </div>
         </div>   
     </div>

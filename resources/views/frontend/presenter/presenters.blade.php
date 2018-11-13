@@ -1,5 +1,5 @@
-<div class="container-fluid mt-5 mb-5" id="ponentes">
-    <div class="container">
+<div class="container-fluid pt-5 mb-5" id="ponentes">
+    <div class="container pt-4">
         <div class="info-header mb-5">
             <h2 class="text-primary text-center pb-3 a_title " >
                 Conoce a nuestros ponentes
@@ -8,7 +8,7 @@
                 Los mejores ponentes nacionales e internacionales
             </p>
         </div>
-        <!--inicioBloque3Ponentes-->
+        <!--inicioBloquePonentes-->
         <div class="container">
             <div class="row mb-5">
                 <!-- inicoPrimerPonente -->
@@ -63,6 +63,32 @@
                 <div class="col-lg-4 col-md-6 mb-5">
                     <div class="card card-cascade a_small">
                         <div class="view view-cascade overlay">
+                            <img class="card-img-top pt-3 height_img_ponente" src="../images/ponentes-ciis/GuillermoMoralesLuna.jpg" alt="Guillermo Benito Morales Luna">
+                            <a>
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body card-body-cascade text-center">
+                            <div class="ponente-ciis">
+                                <h4 class="card-title">
+                                    <p class="mb-0">Dr. Guillermo Benito Morales Luna  </p>
+                                    <img class="icono-bandera" title="México" src="../images/banderas/mexico.svg" />
+                                </h4>
+                                <h6 class="lead text-justify">Doctor en Ciencias Matemáticas</h6>
+                                <h6 class="lead text-justify">Maestro en Ciencias con especialidad en Matemáticas</h6>
+                                <h6 class="lead text-justify">Licenciado en Física y Matemáticas</h6>
+                                <h6 class="lead text-justify">Investigador CINVESTAV 3-B</h6>
+                                <h6 class="lead text-justify mb-3">Líneas de investigación: Fundamentos Matemáticos de la Computación</h6>
+                            </div>
+                            <a href="https://www.cs.cinvestav.mx/Investigadores/Emorales" target="_blank"  class="btn btn-primary">Más información</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- finTercerPonente  -->
+                <!-- inicioCuartoPonente -->
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="card card-cascade a_small">
+                        <div class="view view-cascade overlay">
                             <img class="card-img-top pt-3 height_img_ponente" src="../images/ponentes-ciis/Alonso_Inostrosa-Psijas.jpg" alt="Alonso Inostrosa-Psijas">
                             <a>
                                 <div class="mask rgba-white-slight"></div>
@@ -82,8 +108,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- finTercerPonente  -->
-                <!-- inicioCuartoPonente -->
+                <!-- finCuartoPonente  -->
+                <!-- inicoQuintoPonente -->
                 <div class="col-lg-4 col-md-6 mb-5">
                     <div class="card card-cascade a_small">
                         <div class="view view-cascade overlay">
@@ -107,8 +133,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- finCuartoPonente  -->
-                <!-- inicoQuintoPonente -->
+                <!-- finQuintooPonente -->
+                <!-- inicioSextoPonente -->
                 <div class="col-lg-4 col-md-6 mb-5">
                     <div class="card card-cascade  a_small">
                         <div class="view view-cascade overlay">
@@ -159,8 +185,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- finQuintooPonente -->
-                <!-- inicioSextoPonente -->
+                <!-- finSextoPonente -->  
+                <!-- inicioSeptimoPonente -->
                 <div class="col-lg-4 col-md-6 mb-5">
                     <div class="card card-cascade a_small">
                         <div class="view view-cascade overlay">
@@ -184,8 +210,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- finSextoPonente -->  
-                <!-- inicioSeptimoPonente -->
+                <!-- finSeptimoPonente  -->
+                <!-- inicioOctavoPonente -->
                 <div class="col-lg-4 col-md-6 mb-5">
                     <div class="card card-cascade a_small">
                         <div class="view view-cascade overlay">
@@ -208,8 +234,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- finSeptimoPonente  -->
-                <!-- inicioOctavoPonente -->
+                <!-- finOctavoPonente  -->
+                <!-- inicioNovenoPonente -->
                 <div class="col-lg-4 col-md-6 mb-5">
                     <div class="card card-cascade a_small">
                         <div class="view view-cascade overlay">
@@ -232,8 +258,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- finOctavoPonente  -->
-                <!-- inicioNovenoPonente -->
+                <!-- finNovenoPonente  -->
+                <!-- inicioDecimoPonente -->
                 <div class="col-lg-4 col-md-6 mb-5">
                     <div class="card card-cascade a_small">
                         <div class="view view-cascade overlay">
@@ -257,8 +283,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- finNovenoPonente  -->
-                <!-- inicioDecimoPonente -->
+                <!-- finDecimoPonente  -->
+                <!-- inicioDecimoPrimerPonente -->
                 <div class="col-lg-4 col-md-6 mb-5">
                     <div class="card card-cascade a_small">
                         <div class="view view-cascade overlay">
@@ -282,8 +308,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- finDecimoPonente  -->
-                <!-- inicioDecimoPrimerPonente -->
+                <!-- finDecimoPrimerPonente  -->
+                <!-- inicioDecimoSegundoPonente -->
                 <div class="col-lg-4 col-md-6 mb-5">
                     <div class="card card-cascade a_small">
                         <div class="view view-cascade overlay">
@@ -306,8 +332,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- finDecimoPrimerPonente  -->
-                <!-- inicioDecimoSegundoPonente -->
+                <!-- finDecimoSegundoPonente  -->
+                <!-- inicioDecimoTerceroPonente -->
                 <div class="col-lg-4 col-md-6 mb-5">
                     <div class="card card-cascade a_small">
                         <div class="view view-cascade overlay">
@@ -331,8 +357,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- finDecimoSegundoPonente  -->
-                <!-- inicioDecimoTerceroPonente -->
+                <!-- finDecimoTerceroPonente  -->
+                <!-- inicioDecimoCuartoPonente -->
                 <div class="col-lg-4 col-md-6 mb-5">
                     <div class="card card-cascade a_small">
                         <div class="view view-cascade overlay">
@@ -354,8 +380,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- finDecimoTerceroPonente  -->
-                <!-- inicioDecimoCuartoPonente -->
+                <!-- finDecimoCuartoPonente  -->
+                <!-- inicioDecimoQuintoPonente -->
                 <div class="col-lg-4 col-md-6 mb-5">
                     <div class="card card-cascade a_small">
                         <div class="view view-cascade overlay">
@@ -379,8 +405,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- finDecimoCuartoPonente  -->
-                <!-- inicioDecimoQuintoPonente -->
+                <!-- finDecimoQuintoPonente  -->
+                <!-- inicioDecimoSextoPonente -->
                 <div class="col-lg-4 col-md-6 mb-5">
                     <div class="card card-cascade a_small">
                         <div class="view view-cascade overlay">
@@ -403,35 +429,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- finDecimoQuintoPonente  -->
-                <!-- inicioDecimoSextoPonente -->
-                <!-- <div class="col-lg-4 col-md-6 mb-5">
-                    <div class="card card-cascade a_small">
-                        <div class="view view-cascade overlay">
-                            <img class="card-img-top pt-3 height_img_ponente" src="../images/ponentes-ciis/GuillermoMoralesLuna.jpg" alt="Guillermo Benito Morales Luna">
-                            <a>
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
-                        </div>
-                        <div class="card-body card-body-cascade text-center">
-                            <div class="ponente-ciis">
-                                <h4 class="card-title">
-                                    <p class="mb-0">Dr. Guillermo Benito Morales Luna  </p>
-                                    <img class="icono-bandera" title="México" src="../images/banderas/mexico.svg" />
-                                </h4>
-                                <h6 class="lead text-justify">Doctor en Ciencias Matemáticas</h6>
-                                <h6 class="lead text-justify">Maestro en Ciencias con especialidad en Matemáticas</h6>
-                                <h6 class="lead text-justify">Licenciado en Física y Matemáticas</h6>
-                                <h6 class="lead text-justify">Investigador CINVESTAV 3-B</h6>
-                                <h6 class="lead text-justify mb-3">Líneas de investigación: Fundamentos Matemáticos de la Computación</h6>
-                            </div>
-                            <a href="https://www.cs.cinvestav.mx/Investigadores/Emorales" target="_blank"  class="btn btn-primary">Más información</a>
-                        </div>
-                    </div>
-                </div> -->
                 <!-- finDecimoSextoPonente  -->
             </div>
         </div>
-        <!--finBloque3Ponentes-->
+        <!--finBloquePonentes-->
     </div>
 </div>

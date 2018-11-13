@@ -1,6 +1,6 @@
 @extends('backend.layouts.app')
 
-@section('title',"Sistema de Reporte de Estudiantes Registrados Talleres")
+@section('title',"Sistema de Reporte de Estudiantes Registrados")
 
 @section('after-styles')
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css">
@@ -12,7 +12,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h1><i class="fa fa-pencil"></i> Reporte de Inscritos Taller</h1>
+                <h1><i class="fa fa-pencil"></i> Reporte de Inscritos Concursos</h1>
             </div>
         </div>
     </div>
@@ -21,7 +21,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#addInscritoTallerModal">
+                <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#addInscritoConcursoModal">
                     <i class="fa fa-plus"></i> Agregar inscripcion</a>
             </div>
             <div class="col-md-6 offset-md-6">
@@ -41,7 +41,7 @@
     
     
     <!-- dependences -->
-    <section id="inscritosTaller">
+    <section id="inscritosConcurso">
         <div class="container">
             <!-- Errors-->
             @if (session('error'))
@@ -63,7 +63,7 @@
                 <div class="col">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Lista de inscritos Taller</h4>
+                            <h4>Lista de inscritos Concursos</h4>
                         </div>
                     </div>
                     <br>
@@ -73,7 +73,7 @@
                             <th>ID#</th>
                             <th>Nombre</th>
                             <th>Apellido</th>
-                            <th>Taller</th>
+                            <th>Concurso</th>
                             <th>Costo</th>
                             <th>Accion</th>
                         </tr>
@@ -84,16 +84,15 @@
                                 <td>{{$lista->id}}</td>
                                 <td style="text-transform: uppercase">{{$lista->nombre}}</td>
                                 <td style="text-transform: uppercase">{{$lista->apellido}}</td>
-                                <td>{{$lista->taller}}</td>
+                                <td>{{$lista->concurso}}</td>
                                 <td>{{$lista->precio}}</td>
                                 <td>
                                    
-                                <button type="button" data-id="{{$lista->id}}" data-toggle="modal" data-target="#showInscritoTallerModal" class="btn btn-outline-primary btn-sm read-inscrito-modal">
+                                <button type="button" data-id="{{$lista->id}}" data-toggle="modal" data-target="#showInscritoConcursoModal" class="btn btn-outline-primary btn-sm read-inscrito-modal">
                                         <i class="fa fa-eye"></i></button>
-                                <button type="button"  data-id="{{$lista->id}}" data-toggle="modal" data-target="#editInscritoTallerModal" class="btn btn-outline-warning btn-sm edit-inscrito-modal" >
+                                <button type="button"  data-id="{{$lista->id}}" data-toggle="modal" data-target="#editInscritoConcursoModal" class="btn btn-outline-warning btn-sm edit-inscrito-modal" >
                                         <i class="fa fa-pencil"></i></button>
- <a class="btn btn-primary btn-xs" href="{{url("/admin/reporte/taller/imprimir/{$lista->id}")}}" ><span class="glyphicon glyphicon-pencil"></span>Imprimir</a>
-
+<a class="btn btn-primary btn-xs" href="{{action('ConcursoController@imprimir', $lista->id)}}" ><span class="glyphicon glyphicon-pencil"></span>Imprimir</a>
 
                                 </td>
                             </tr>
@@ -120,70 +119,6 @@
     
     <script src="https://unpkg.com/sweetalert2@7.20.3/dist/sweetalert2.all.js"></script>
     <script>
-
-$("[name='taller']").on('change', function() {
-            var taller=this.value;
-            var tipo=$("[name='inscripcion']").val();
-            console.log(tipo);
-            if(taller==='Diseño e impresion 3D'){	
-                if(tipo==='inscrito CIIS'){
-                    $("[name='precio']").val('100');
-                }
-                else if(tipo==='No inscrito CIIS'){
-                    $("[name='precio']").val('90');
-                }	
-                else if(tipo==='estudiante ESIS'){
-                    $("[name='precio']").val('80');
-                }
-                else{
-
-                }
-
-            }
-            else if(valor==='estudiante_esis'){
-                $("[name='payEdit']").val('50');
-            }
-            else if(valor==='profesional'){
-                $("[name='payEdit']").val('150');
-            }
-	    else if(valor==='egresado_esis'){
-                $("[name='payEdit']").val('120');
-            }
-		else if(valor==='beca'){
-                $("[name='payEdit']").val('0');
-            }
-		else if(valor==='semibeca_profesional'){
-                $("[name='payEdit']").val('75');
-            }
-		else if(valor==='semibeca_estudiante'){
-                $("[name='payEdit']").val('50');
-            }
-		else if(valor==='docente_esis'){
-                $("[name='payEdit']").val('100');
-            }
-
-            else if(valor==='delegacion1'){
-                $("[name='payEdit']").val('80');
-            }
-            else if(valor==='delegacion2'){
-                $("[name='payEdit']").val('85');
-            }
-            else if(valor==='delegacion3'){
-                $("[name='payEdit']").val('90');
-            }
-            else if(valor==='delegacion4'){
-                $("[name='payEdit']").val('95');
-            }
-else if(valor==='agosto'){
-                $("[name='payEdit']").val('80');
-            }
-
-            else{
-
-            }
-        })
-
-
             $(".read-inscrito-modal").on("click",function (e) {
             let id = $(this).data("id");
             console.log(id)
@@ -195,17 +130,17 @@ else if(valor==='agosto'){
             });
             swal.showLoading();
             $.ajax({
-                url: '/admin/reporte/taller/mostrar/' + id,
+                url: '/admin/reporte/concurso/mostrar/' + id,
                 type: 'GET',
                 success: function (data) {
                     $("[name='nombreShow']").val(data.nombre)
                     $("[name='apellidoShow']").val(data.apellido)
                     $("[name='celularShow']").val(data.celular)
                     $("[name='institucionShow']").val(data.institucion)
-                    $("[name='tallerShow']").val(data.taller)
+                    $("[name='concursoShow']").val(data.concurso)
                     $("[name='precioShow']").val(data.precio)
-$("[name='cobradorShow']").val(data.last_user_modificied)
                     $("[name='inscripcionShow']").val(data.tipo_inscripcion)
+                    $("[name='integrantesShow']").val(data.integrantes)
                     swal({
                         type: 'success',
                         title: 'Datos cargados',
@@ -215,7 +150,7 @@ $("[name='cobradorShow']").val(data.last_user_modificied)
                     swal.close();
                     swal.hideLoading();
                     console.log(data)
-                    $('#showInscritoTallerModal').modal('show')
+                    $('#showInscritoConcursoModal').modal('show')
                 },
                 error: function (e) {
                     console.log(e);
@@ -237,18 +172,18 @@ $("[name='cobradorShow']").val(data.last_user_modificied)
                 showConfirmButton: false
             });
             $.ajax({
-                url: '/admin/reporte/taller/mostrar/' + id,
+                url: '/admin/reporte/concurso/mostrar/' + id,
                 type: 'GET',
                 success: function (data) {
-                    $('#editInscritoTallerModal form').attr('action','/admin/reporte/taller/' + data.id);
+                    $('#editInscritoConcursoModal form').attr('action','/admin/reporte/concurso/' + data.id);
                     $("[name='nombreEdit']").val(data.nombre)
                     $("[name='apellidoEdit']").val(data.apellido)
                     $("[name='celularEdit']").val(data.celular)
                     $("[name='institucionEdit']").val(data.institucion)
-                    $("[name='tallerEdit']").val(data.taller)
+                    $("[name='concursoEdit']").val(data.concurso)
                     $("[name='precioEdit']").val(data.precio)
-                    $("[name='inscripcionEdit']").val(data.tipo_inscripcion)
-$("[name='cobradorEdit']").val(data.last_user_modificied)
+                    $("[name='tipoinscripcionEdit']").val(data.tipo_inscripcion)
+                    $("[name='integrantesEdit']").val(data.integrantes)
                     swal({
                         type: 'success',
                         title: 'Datos cargados',
@@ -258,7 +193,7 @@ $("[name='cobradorEdit']").val(data.last_user_modificied)
                     swal.hideLoading();
                     swal.close();
                     console.log(data)
-                    $('#editInscritoTallerModal').modal('show')
+                    $('#editInscritoConcursoModal').modal('show')
                 },
                 error: function (e) {
                     console.log(e);
@@ -276,7 +211,7 @@ $("[name='cobradorEdit']").val(data.last_user_modificied)
 @endsection
 
 @section('modal')
-    @include('backend.inscritos.includes.registerTaller')
-    @include('backend.inscritos.includes.showtaller')
-    @include('backend.inscritos.includes.editTaller')
+    @include('backend.inscritos.includes.registerConcurso')
+    @include('backend.inscritos.includes.showConcurso')
+    @include('backend.inscritos.includes.editConcurso')
 @endsection

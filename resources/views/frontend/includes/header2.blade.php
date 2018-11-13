@@ -128,7 +128,7 @@
                 <p></p>
             </article> -->
             <article class="col-sm-12 col-md-12">
-                <h2 class="seccion__titulo">
+                <h2 class="seccion__titulo text-center">
                     <span class="titulo--blue">Conoce</span> un poco más del
                     <span class="titulo--blue">evento</span>
                 </h2>
@@ -152,71 +152,66 @@
     </div>
 </section>
 <section class="container-fluid beneficio mb-3">
-        <div class="container">
-            <div class="row">
+    <div class="container">
+        <div class="row">
             <div class="col-lg-3 col-sm-6 mb-3">
                     <img src="images/calendario.png" class="img-fluid rounded mt-4" style="width:50px;float: left;">
                 <h4 class="text-center text-white" style="margin-top: 10%;font-size:11pt;font-weight: bold;">Fecha</h4>
                 <h5 class="text-center text-white" style="font-size:11pt">del 12 al 16 de noviembre</h5>
-                
+
             </div>
             <div class="col-lg-3 col-sm-6 mb-3">
                     <img src="images/reloj(1).png" class="img-fluid rounded mt-4" style="width:50px;float: left;">
                     <h4  class="text-center text-white" style="margin-top: 10%;font-size:11pt;font-weight: bold;">Hora de inicio</h4>
                     <h5 class="text-center text-white" style="font-size:11pt">9:00 am</h5>
-                </div>
-                <div class="col-lg-3 col-sm-6 mb-3">
-                        <img src="images/ponente-en-una-conferencia(1).png" class="img-fluid rounded mt-4" style="width:50px;float: left;">
-                        <h4  class="text-center text-white" style="margin-top: 10%;font-size:11pt;font-weight: bold;">Expositores</h4>
-                        <h5 class="text-center text-white" style="font-size:11pt">Nacionales e internacionales</h5>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 mb-3">
-                            <img src="images/aplausos(2).png" class="img-fluid rounded mt-4" style="width:50px;float: left;">
-                            <h4  class="text-center text-white" style="margin-top: 10%;font-size:11pt;font-weight: bold;">Tours y más</h4>
-                            <h5 class="text-center text-white" style="font-size:11pt">Disfruta Tacna</h5>
-                        </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-3">
+                    <img src="images/ponente-en-una-conferencia(1).png" class="img-fluid rounded mt-4" style="width:50px;float: left;">
+                    <h4  class="text-center text-white" style="margin-top: 10%;font-size:11pt;font-weight: bold;">Expositores</h4>
+                    <h5 class="text-center text-white" style="font-size:11pt">Nacionales e internacionales</h5>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-3">
+                <img src="images/aplausos(2).png" class="img-fluid rounded mt-4" style="width:50px;float: left;">
+                <h4  class="text-center text-white" style="margin-top: 10%;font-size:11pt;font-weight: bold;">Tours y más</h4>
+                <h5 class="text-center text-white" style="font-size:11pt">Disfruta Tacna</h5>
+            </div>
         </div>
     </div>
-    </section>
+</section>
 
 <section class="container-fluid">
-        <div class="container">
-                <h2 class="text-primary pb-3 text-center a_title">Cuenta regresiva</h2>
-                <h3 class="lead pb-3 mt-3 text-center color-texto">Cada vez falta menos para el inicio de este gran evento</h3>
-                <section id="countdown">
-                        <div>
-                          <div class="numbers">
-                            <div class="timer"><!--set in js--></div>
-                          </div>
-                        </div>
-                </section>
-        </div>
+    <div class="container">
+            <h2 class="text-primary pb-3 text-center a_title">Cuenta regresiva</h2>
+            <h3 class="lead pb-3 mt-3 text-center color-texto">Cada vez falta menos para el inicio de este gran evento</h3>
+            <section id="countdown">
+                    <div>
+                      <div class="numbers">
+                        <div class="timer"><!--set in js--></div>
+                      </div>
+                    </div>
+            </section>
+    </div>
 </section>
 
 
 <section class="container-fluid beneficio mt-3">
-        <div class="container pt-3">
-          <h2 class="text-center text-white mt-3 a_title">Beneficios de los participantes</h2>
-          <hr>
-          <div class="row">
-
-                <div class="padding-card col-lg-3 col-sm-6 mb-3">
-                        <div class="card h-100 rounded a_small Blurb">
-                          <div class="card-body text-center">
-                              <img src="https://image.flaticon.com/icons/svg/201/201576.svg" width="50px">
-                            <h1 class="lead pb-3 mt-3  color-texto">Material de apuntes</h1>
-                            
-                          </div>
-                        </div>
-                      </div>
-
-
+    <div class="container pt-3 pb-4">
+        <h2 class="text-center text-white mt-3 a_title">Beneficios de los participantes</h2>
+        <hr>
+        <div class="row">
+            <div class="padding-card col-lg-3 col-sm-6 mb-3">
+                <div class="card h-100 rounded a_small Blurb">
+                  <div class="card-body text-center">
+                      <img src="https://image.flaticon.com/icons/svg/201/201576.svg" width="50px">
+                    <h1 class="lead pb-3 mt-3  color-texto">Material de apuntes</h1>
+                  </div>
+                </div>
+            </div>
             {{-- <div class="padding-card col-lg-3 col-sm-6 mb-3">
               <div class="card h-100 rounded a_small Blurb">
                 <div class="card-body text-center">
                   <img src="https://image.flaticon.com/icons/svg/326/326935.svg" class="img-fluid rounded" style="width:50px;">
                   <h1 class="lead pb-3 mt-3  color-texto">Acceso a eventos académicos</h1>
-                  
                 </div>
               </div>
             </div> --}}
@@ -258,26 +253,23 @@
             </div>
 
             <div class="padding-card col-lg-3 col-sm-6 mb-3">
-                    <div class="card h-100 rounded a_small Blurb">
-                      <div class="card-body text-center">
-                            
-                          <img src="https://www.freeiconspng.com/uploads/school-bag-icon-1.png" width="50px">
-                        <h1 class="lead pb-3 mt-3  color-texto">Morral CIIS</h1>
-                        
-                      </div>
-                    </div>
+                <div class="card h-100 rounded a_small Blurb">
+                  <div class="card-body text-center">
+
+                      <img src="https://www.freeiconspng.com/uploads/school-bag-icon-1.png" width="50px">
+                    <h1 class="lead pb-3 mt-3  color-texto">Morral CIIS</h1>
+
                   </div>
-      
-          </div>
-      
-      
+                </div>
+            </div>
         </div>
-      </section>
+    </div>
+</section>
 
 <a href="https://m.me/169105266515410" class="float xd" target="__blank">
     <i class="fab fa-facebook-messenger my-float fa-2x"></i>
-    </a>
-    <div class="label-container">
+</a>
+<div class="label-container">
     <div class="label-text">Envía tus dudas por aquí</div>
     <i class="fa fa-play label-arrow"></i>
 </div>

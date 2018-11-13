@@ -14,10 +14,18 @@ class RegistradosController extends Controller
 {
     //
 
+    public function searchRegistered (Request $request){
+
+        $student = Registered::where('dni',$request->code)->get();
+
+        return response()->json($student);
+
+    }
     public function renderReportTable()
     {
 
-        $students = Registered::all();
+   //$students = Registered::where('pago','50');
+      $students = Registered::all();
 
 //        return response()->json($students);
 

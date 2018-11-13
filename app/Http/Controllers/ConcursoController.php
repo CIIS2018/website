@@ -2,29 +2,28 @@
 
 namespace App\Http\Controllers;
 
-use App\inscritosTaller;
+use App\inscritosConcurso;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use App\User;
 
-
-class tallerController extends Controller
+class ConcursoController extends Controller
 {
-    public function listaTaller()
+    public function listaConcurso()
     {
-       $listas = inscritosTaller::all();
+       $listas = inscritosConcurso::all();
 
-        return view('backend.inscritos.listaTaller',[
+        return view('backend.inscritos.listaConcurso',[
             'listas'=>$listas,
        ]);
     }
 
 public function imprimir($id){
-    $datos=inscritosTaller::find($id);
-$cobrador=User::find($datos->last_user_modificied);
-    return view('backend.inscritos.imprimir_taller')->with('datos', $datos)->with('cobrador', $cobrador);
-  }
+    //dd($id);
+    $datos=inscritosConcurso::find($id); 
+//$cobrador=User::find($datos->last_user_modificied);
+//    return view('backend.inscritos.imprimir_taller')->with('datos', $datos)->with('cobrador', $cobrador);
+ return view('backend.inscritos.imprimir_concurso')->with('datos', $datos);
 
+  }
 
     public function create(Request $request){
        
@@ -33,24 +32,24 @@ $cobrador=User::find($datos->last_user_modificied);
         //     'nombre.max'=>'el nombre no supera 20 caracteres'
         //     ]
         // );
-            $inscritosTaller = inscritosTaller::create([
+            $inscritosConcurso = inscritosConcurso::create([
                 'nombre'=>$request->input('nombre'),
                 'apellido'=>$request->input('apellido'),
                 'celular'=>$request->input('celular'),
-                'institucion'=>$request->input('instituto'),
-                'taller'=>$request->input('taller'),
+                'institucion'=>$request->input('institucion'),
+                'concurso'=>$request->input('concurso'),
                 'precio'=>$request->input('precio'),
-                'tipo_inscripcion'=>$request->input('inscripcion'),
-		'last_user_modificied'=>Auth::id(),
+                'tipo_inscripcion'=>$request->input('tipoinscripcion'),
+                'integrantes'=>$request->input('integrantes'),
             ]);
             
-            return redirect('/admin/reporte/taller');
+            return redirect('/admin/reporte/concurso');
     }
 
     public function show(Request $request, $id){
         $id_inscrito = $id;
         try{
-                $inscrito = inscritosTaller::findOrFail($id_inscrito);
+                $inscrito = inscritosConcurso::findOrFail($id_inscrito);
                 return response()->json($inscrito);
         }catch (Exception $e){
             return response()->json('ERROR');
@@ -64,31 +63,31 @@ $cobrador=User::find($datos->last_user_modificied);
                 'apellido'=>$request->input('apellidoEdit'),
                 'celular'=>$request->input('celularEdit'),
                 'institucion'=>$request->input('institucionEdit'),
-                'taller'=>$request->input('tallerEdit'),
+                'concurso'=>$request->input('concursoEdit'),
                 'precio'=>$request->input('precioEdit'),
-                'tipo_inscripcion'=>$request->input('inscripcionEdit'),
-'last_user_modificied'=>Auth::id(),
-
+                'tipo_inscripcion'=>$request->input('tipoinscripcionEdit'),
+                'integrantes'=>$request->input('integrantesEdit'),
         ];
         try{
-            if($dataResponse['nombre'] == '' || $dataResponse['apellido'] == ''){
-                return redirect()->route('report.inscritosTaller')
+            if($dataResponse['nombre'] == '' || $dataResponse['apellido'] == '' || $dataResponse['celular'] == ''){
+                return redirect()->route('report.inscritosConcurso')
                     ->with('error', TRUE);
             }else{
-                $inscrito = inscritosTaller::find($id_inscrito);
+                $inscrito = inscritosConcurso::find($id_inscrito);
                 $inscrito->nombre = $dataResponse['nombre'];
                 $inscrito->apellido = $dataResponse['apellido'];
                 $inscrito->celular = $dataResponse['celular'];
                 $inscrito->institucion = $dataResponse['institucion'];
-                $inscrito->taller = $dataResponse['taller'];
+                $inscrito->concurso = $dataResponse['concurso'];
                 $inscrito->precio = $dataResponse['precio'];
                 $inscrito->tipo_inscripcion = $dataResponse['tipo_inscripcion'];
+                $inscrito->integrantes = $dataResponse['integrantes'];
                 $inscrito->save();
-                return redirect()->route('report.inscritosTaller')
+                return redirect()->route('report.inscritosConcurso')
                     ->with('status', TRUE);
             }
         }catch (Exception $e){
-            return redirect()->route('report.inscritosTaller')
+            return redirect()->route('report.inscritosConcurso')
                 ->with('error', TRUE);
         }
     }

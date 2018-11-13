@@ -9,7 +9,7 @@ class inscritosTaller extends Model
 {
     //
     protected $fillable = [
-        'nombre', 'apellido', 'celular','institucion','taller','precio','ciudad'
+        'nombre', 'apellido', 'celular','institucion','taller','precio','ciudad','last_user_modificied'
     ];
 
     protected $table = 'inscritosTaller';

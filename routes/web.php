@@ -35,6 +35,7 @@ Route::get('/reporte/inscritos/imprimir/{id}', 'InscritosController@imprimir')->
 
     Route::post('/reporte/registrados/{id}','RegistradosController@update')->name('report.registrados.update');
 
+    Route::get('/reporte/registrados/buscar','RegistradosController@searchRegistered')->name('report.registrados.search');
 
  Route::get('/reporte/inscritos','InscritosController@list')->name('report.inscritos');
     Route::post('/reporte/inscritos','InscritosController@create');
@@ -57,6 +58,15 @@ Route::get('/reporte/taller','TallerController@listaTaller')->name('report.inscr
 Route::post('/reporte/taller','TallerController@create');
 Route::get('/reporte/taller/mostrar/{id}','TallerController@show')->name('report.inscritosTaller.show');
 Route::post('/reporte/taller/{id}','TallerController@update')->name('report.inscritosTaller.update');
+Route::get('/reporte/taller/imprimir/{id}', 'TallerController@imprimir')->name('imprimir_taller');
+
+ //concursos
+ Route::get('/reporte/concurso','ConcursoController@listaConcurso')->name('report.inscritosConcurso');
+ Route::post('/reporte/concurso','ConcursoController@create');
+ Route::get('/reporte/concurso/mostrar/{id}','ConcursoController@show')->name('report.inscritosConcurso.show');
+ Route::post('/reporte/concurso/{id}','ConcursoController@update')->name('report.inscritosConcurso.update');
+Route::get('/reporte/concurso/imprimir/{id}', 'ConcursoController@imprimir')->name('imprimir_concurso');
+
 
 
 

@@ -103,7 +103,21 @@
                         </div>
                     </div>                
                     
+
+ <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="monto" class="form-control-label" style="color:red">Monto que pago</label>
+                            <input type="text" name="monto" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="vuelto" class="form-control-label" style="color:red">Vuelto de la persona</label>
+<input type="text" name="vuelto" class="form-control" disabled>
+                                                             </select>
+                        </div>
+                    </div>
+
                     
+
                     <div class="modal-footer">
                         <button class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
                         <button class="btn btn-primary" type="submit">Agregar Inscrito</button>

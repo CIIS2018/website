@@ -26,7 +26,8 @@ class InscritosController extends Controller
     {
         //dd($id);
         $datos = Inscritos::find($id);
-        return view('backend.inscritos.imprimir')->with('datos', $datos);
+	$cobrador=User::find($datos->last_user_modificied);
+        return view('backend.inscritos.imprimir')->with('datos', $datos)->with('cobrador', $cobrador);
     }
 
 
@@ -46,7 +47,8 @@ class InscritosController extends Controller
             'descuento' => $request->descount,
             'tipo_inscripcion' => $request->type,
             'confirmado' => 1,
-            'last_user_modificied' => Auth::id()
+            'last_user_modificied' => Auth::id(),
+		'cantidad_que_pago'=>$request->monto
         ];
         try {
             if ($dataResponse['nombre'] == '' || $dataResponse['apellido'] == '') {

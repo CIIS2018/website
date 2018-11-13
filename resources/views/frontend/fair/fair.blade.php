@@ -1,20 +1,20 @@
 ﻿
 
-<section class="container-fluid pt-4 pb-5" id="feria">
-    <div class="container">
+<section class="container-fluid pt-5 pb-5" id="feria">
+    <div class="container pt-4">
         <h2 class="text-primary text-center
                  pb-3 a_small">
             Conoce la feria tecnológica
         </h2>
         <div class="row">
             <div class="row borde_feria justify-content-center">
-                <!--<div class="col-sm-12 col-md-8 col-xl-4 mb-2 d-flex align-items-center ">
+                <div class="col-sm-12 col-md-8 col-xl-5 mb-2 d-flex align-items-center ">
                     <div class="embed-responsive embed-responsive-16by9">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6bP6ouor0AY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe src="https://drive.google.com/file/d/1a4WoE2GHXlGqQshQKC3iiVSHiNxe9KEv/preview" width="640" height="480"></iframe>
                     </div>
-                </div>-->
+                </div>
                 <br>
-                <div class="col-sm-12 col-md-8 col-xl-6 p-3 dflex align-items-center">
+                <div class="col-sm-12 col-md-8 col-xl-5 p-3 dflex align-items-center">
                     <div class="borde_feria my-auto">
                         <p class="p-3 text-justify">La tecnología está al alcance de todos, si tu objetivo es encontrar lo mejor; ven y se parte de la I Feria Tecnológica 2018 organizada por el XIX Congreso Internacional de Informática y Sistemas el cual se llevará a cabo en la explanada frente al auditorio Juan Figueroa Salgado de la Universidad Nacional Jorge Basadre Grohmann;  este evento se realizará el 15 y 16 de noviembre de 9:00 am a 5:00pm, se contará  con la presencia de grandes empresas que nos expondrán  sus más recientes y mejores productos. Para mayor información comunicarse a ciistacna@unjbg.edu.pe</p>
                     </div>

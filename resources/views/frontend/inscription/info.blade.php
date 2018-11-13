@@ -1,8 +1,8 @@
-﻿<div class="container-fluid beneficio text-white" id="pasos" >
-    <div class="container">
+﻿<div class="container-fluid beneficio text-white pt-5 pb-5" id="pasos" >
+    <div class="container pt-4">
         <section class="serv-grids">
             <div class="info-header mb-3">
-                <h2 class="text-center pt-3 a_small">
+                <h2 class="text-center a_small">
                     ¿Cómo inscribirse?
                 </h2>
                 <hr>

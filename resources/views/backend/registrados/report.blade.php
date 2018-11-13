@@ -53,6 +53,7 @@
                             <th>Email</th>
                             <th>DNI</th>
                             <th>Tipo Inscripcion</th>
+<th>Pago</th>
                             <th>Imagen</th>
                             <th>Pago</th>
                             <th>Confirmar</th>
@@ -68,6 +69,7 @@
                                 <td>{{$student->email}}</td>
                                 <td>{{$student->dni}}</td>
                                 <td>{{$student->tipo_inscripcion}}</td>
+<td>{{$student->pago}}</td>
                                 <td> <button class="image-student-modal btn btn-warning btn-xs" data-toggle="modal" data-id="{{$student->id}}">Ver Imagen</button></td>
                                 <td><button class="edit-registrado-modal btn btn-primary btn-xs" data-id="{{$student->id}}"><i class="fa fa-pencil"></i></button></td>
                                 <td><button class="confirmate-student btn btn-success btn-xs" data-id="{{$student->id}}">Confirmar</button></td>
@@ -142,14 +144,7 @@ language: {
                 success: function (data) {
 
                     console.log(data);
-                    if(data.imagen == null){
-                        swal({
-                            type: 'error',
-                            title: 'No hay una imagen',
-                        });
-                        return ;
-                    }
-                    
+
                     $('#modal-student-img-src').attr('src', '/public/uploads/voucher/' + data.imagen);
                     swal({
                         type: 'success',

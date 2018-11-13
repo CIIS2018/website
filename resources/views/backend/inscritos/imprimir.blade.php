@@ -100,14 +100,19 @@
       hr{
         border-top: 1px solid rgba(3, 99, 242);
       }
+hr.style11 {
+	height: 6px;
+	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+    border: 0;
+}
       </style>
 
-    <div style="margin-left:5px;width:340px">
-
-      <img src="{{asset('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF0CfX9o5NPj0I2Pzo7sX7Aab-cUnVDJuJ9aclFVJ9lD7kgLV9')}}" style="width:100px">
-      <p style="margin-top: -80px;margin-left: 110px;font-weight: bold;" >XIX CONGRESO INTERNACIONAL </p>
+    <div style="margin-left:35px;width:340px">
+	      <img src="{{asset('images/icono.png')}}" style="width:100px;margin-bottom:5px">
+<p style="margin-top:-90px;margin-left: 110px;font-size: 8pt;font-style: italic;">Universidad Nacional Jorge Basadre Grohmann</p>      
+<p style="margin-left: 110px;font-weight: bold;" >XIX CONGRESO INTERNACIONAL </p>
       <p style="margin-top: -20px;margin-left: 115px;font-weight: bold;">DE INFORMÁTICA Y SISTEMAS</p>
-      <p style="margin-left: 110px;font-size: 8pt;font-style: italic;">Universidad Nacional Jorge Basadre Grohmann</p>
+      
       
 <hr style="margin-bottom: 0">
       <p style="
@@ -151,37 +156,41 @@
       @elseif ($datos->tipo_inscripcion==='docente_esis')
       <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Docente esis</span></p>
       @elseif ($datos->tipo_inscripcion==='delegacion1')
-      <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Delegacion 1</span></p>
+      <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Delegación</span></p>
       @elseif ($datos->tipo_inscripcion==='delegacion2')
-      <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Delegacion</span></p>
+      <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Delegación</span></p>
       @elseif ($datos->tipo_inscripcion==='delegacion3')
-      <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Delegacion</span></p>
+      <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Delegación</span></p>
       @elseif ($datos->tipo_inscripcion==='delegacion4')
-      <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Delegacion</span></p>
+      <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Delegación</span></p>
       @elseif ($datos->tipo_inscripcion==='agosto')
       <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Promoción agosto</span></p>
 
       @endif
 
       {{-- <p style="text-align: center;font-weight: bold;">Inversión: S/.{{$datos->pago}}.00</p> --}}
-      <p style="font-style:italic;text-align:center" >"Gestión del conocimiento e Innovación tecnológica"</p>
+      <p style="font-style:italic;text-align:center" >"Gestión del conocimiento e innovación tecnológica"</p>
       <p style="font-weight: bold;text-align:center;margin-bottom:0">¡Gracias por su participación!</p>
       
       <hr style="margin-top:0">
-      <p style="font-size: 15pt;margin-bottom:0%">Ticket No. {{$datos->id}}</p>
-      <p style="font-weight: bold;margin-bottom:0%">Atendido por : </p>
+      <p style="font-size: 15pt;margin-bottom:0%;font-weight:bold">Ticket No.<span style="font-size:19pt">{{$datos->id}}</span></p>
+
+ @if(!isset($cobrador->name))
+      <p style="font-weight: bold;margin-bottom:0%">Atendido por : Miriam Marisol Mamani Mamani </p>
+      @else
+      <p style="font-weight: bold;margin-bottom:0%">Atendido por : {{$cobrador->name}} </p>
+      @endif
+
       <p style="font-weight: bold;">Fecha:<span style="font-weight: normal"> {{$datos->updated_at}} </span></p>
       <hr>
       <p style="font-weight: bold;font-size: 9.6pt;">Nota: <span style="font-weight: normal">Conservar su ticket para la entrega de sus materiales</span></p>
-      <br><br>
-
-          {{-- <label style="color:blue">{{$datos->codigo}}<br>
+	          {{-- <label style="color:blue">{{$datos->codigo}}<br>
             {{$datos->nombre}} 
             {{$datos->apellido}}<br>{{$datos->updated_at}}<br>
 
             <h1 style="margin-left:5px">s/.{{$datos->pago}}.00</h1></label> --}}
 
-            @if($datos->tipo_inscripcion === 'estudiante_esis')
+            {{-- @if($datos->tipo_inscripcion === 'estudiante_esis')
 
             <p>Estudiante ESIS</p>
 
@@ -210,14 +219,130 @@
             @elseif ($datos->tipo_inscripcion==='delegacion4')
             <p>Delegacion</p>
 
-            @endif
+            @endif --}}
 
-            <p>Inscripcion CIIS </p>
-
-          
-
+ 
   </div>
 
+  <div style="margin-left:570px;margin-top:-649px;width:340px">
+<img src="{{asset('images/icono.png')}}" style="width:100px;margin-bottom:5px">        
+<p style="margin-top:-90px;margin-left: 110px;font-size: 8pt;font-style: italic;">Universidad Nacional Jorge Basadre Grohmann</p>        
+<p style="margin-left: 110px;font-weight: bold;" >XIX CONGRESO INTERNACIONAL </p>
+        <p style="margin-top: -20px;margin-left: 115px;font-weight: bold;">DE INFORMÁTICA Y SISTEMAS</p>
+        
+        
+  <hr style="margin-bottom: 0">
+        <p style="
+        font-weight: bold;">REGISTRO DE INSCRIPCIÓN DE:</p>
+                    <p style="
+                    text-align: center;
+                    font-size: 20pt;
+                    font-weight: bold;
+                    margin-bottom: 0;
+                ">{{$datos->nombre}}</p>
+                    <p style="
+                    text-align: center;
+                    font-size: 20pt;
+                    font-weight: bold;margin-bottom:0%
+                ">{{$datos->apellido}}</p>
+                    <p style="
+                    text-align: center;">{{$datos->institucion}}</p>
+        <p style="
+        text-align: center;font-weight: bold;">Por concepto de : </p>
+        <p style="
+        text-align: center;font-size: 15pt;margin-bottom: 0;font-weight: bold;font-style:italic;margin-bottom:0%">INSCRIPCIÓN AL XIX CIIS 2018</p>      
+        <hr style="margin-top: 0">
+        @if($datos->tipo_inscripcion === 'estudiante_esis')
+  
+        <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Estudiante ESIS</p>
+  
+        @elseif ($datos->tipo_inscripcion==='estudiante')
+  
+        <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Estudiante</span></p>
+  
+        @elseif ($datos->tipo_inscripcion==='profesional')
+        <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Profesional</span></p>
+        @elseif ($datos->tipo_inscripcion==='egresado_esis')
+        <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Egresado Esis</span></p>
+        @elseif ($datos->tipo_inscripcion==='beca')
+        <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Beca</p>
+        @elseif ($datos->tipo_inscripcion==='semibeca_profesional')
+        <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Semibeca profesional</span></p>
+        @elseif ($datos->tipo_inscripcion==='semibeca_estudiante')
+        <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Semibeca estudiante</span></p>
+        @elseif ($datos->tipo_inscripcion==='docente_esis')
+        <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Docente esis</span></p>
+        @elseif ($datos->tipo_inscripcion==='delegacion1')
+        <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Delegación</span></p>
+        @elseif ($datos->tipo_inscripcion==='delegacion2')
+        <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Delegación</span></p>
+        @elseif ($datos->tipo_inscripcion==='delegacion3')
+        <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Delegación</span></p>
+        @elseif ($datos->tipo_inscripcion==='delegacion4')
+        <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Delegación</span></p>
+        @elseif ($datos->tipo_inscripcion==='agosto')
+        <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Promoción agosto</span></p>
+  
+        @endif
+  
+        {{-- <p style="text-align: center;font-weight: bold;">Inversión: S/.{{$datos->pago}}.00</p> --}}
+        <p style="font-style:italic;text-align:center" >"Gestión del conocimiento e innovación tecnológica"</p>
+        <p style="font-weight: bold;text-align:center;margin-bottom:0">¡Gracias por su participación!</p>
+        
+        <hr style="margin-top:0">
+        <p style="font-size: 15pt;margin-bottom:0%;font-weight:bold">Ticket No. <span style="font-size:19pt">{{$datos->id}}</span></p>
+
+       @if(!isset($cobrador->name))
+      <p style="font-weight: bold;margin-bottom:0%">Atendido por : Miriam Marisol Mamani Mamani </p>
+      @else
+      <p style="font-weight: bold;margin-bottom:0%">Atendido por : {{$cobrador->name}} </p>
+      @endif
+
+        <p style="font-weight: bold;">Fecha:<span style="font-weight: normal"> {{$datos->updated_at}} </span></p>
+        <hr>
+        <p style="font-weight: bold;font-size: 9.6pt;">Nota: <span style="font-weight: normal">Conservar su ticket para la entrega de sus materiales</span></p>
+ 
+            {{-- <label style="color:blue">{{$datos->codigo}}<br>
+              {{$datos->nombre}} 
+              {{$datos->apellido}}<br>{{$datos->updated_at}}<br>
+  
+              <h1 style="margin-left:5px">s/.{{$datos->pago}}.00</h1></label> --}}
+  
+              {{-- @if($datos->tipo_inscripcion === 'estudiante_esis')
+  
+              <p>Estudiante ESIS</p>
+  
+              @elseif ($datos->tipo_inscripcion==='estudiante')
+  
+              <p>Estudiante</p>
+  
+              @elseif ($datos->tipo_inscripcion==='profesional')
+              <p>Profesional</p>
+              @elseif ($datos->tipo_inscripcion==='egresado_esis')
+              <p>Egresado Esis</p>
+              @elseif ($datos->tipo_inscripcion==='beca')
+              <p>Beca</p>
+              @elseif ($datos->tipo_inscripcion==='semibeca_profesional')
+              <p>Semibeca profesional</p>
+              @elseif ($datos->tipo_inscripcion==='semibeca_estudiante')
+              <p>Semibeca estudiante</p>
+              @elseif ($datos->tipo_inscripcion==='docente_esis')
+              <p>Docente esis</p>
+              @elseif ($datos->tipo_inscripcion==='delegacion1')
+              <p>Delegacion 1</p>
+              @elseif ($datos->tipo_inscripcion==='delegacion2')
+              <p>Delegacion</p>
+              @elseif ($datos->tipo_inscripcion==='delegacion3')
+              <p>Delegacion</p>
+              @elseif ($datos->tipo_inscripcion==='delegacion4')
+              <p>Delegacion</p>
+  
+              @endif --}}
+  
+   
+    </div>
+
+    
     
 {{-- 
   <div class="visible-print text-center">

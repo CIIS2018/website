@@ -9,7 +9,7 @@ class Inscritos extends Model
 {
     //
     protected $fillable = [
-        'nombre', 'email', 'apellido','dni','tipo_inscripcion','ciudad','institucion','pago','celular','foto_voucher','codigo','descuento','confirmado','modo_pago','dni','last_user_modificied','cantidad_que_pago'
+        'nombre', 'email', 'apellido','dni','tipo_inscripcion','ciudad','institucion','pago','celular','foto_voucher','codigo','descuento','confirmado','modo_pago','dni','last_user_modificied'
     ];
 
     protected $table = 'Inscritos';

@@ -114,8 +114,8 @@ class CiisController extends Controller
 
                   $message->from('ciis.xix@gmail.com','Pagina del ciis');
 
-                //   $message->to('miriam.19.marisol@gmail.com')->subject('nuevo asistente registrado');
-  $message->to('achoque1400@gmail.com')->subject('nuevo asistente registrado');
+                //$message->to('miriam.19.marisol@gmail.com')->subject('nuevo asistente registrado');
+  $message->to('achoque1400@gmail.com')->cc('alcazar.milagros.p@gmail.com')->cc('a_mmamanim@unjbg.edu.pe')->cc('belensua123@gmail.com')->subject('nuevo asistente registrado');
                   $message->attach($img);
                 
 		});

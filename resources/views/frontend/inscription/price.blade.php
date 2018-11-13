@@ -1,6 +1,6 @@
-<div class="Precios" style="margin:5%">
-    <div class="clearfix">
-        <h2 class="text-primary text-center pb-3 a_title" id="precios">Inversión</h2>
+<div class="Precios pt-5" id="precios">
+    <div class="clearfix pt-4">
+        <h2 class="text-primary text-center pb-3 a_title">Inversión</h2>
         <h4 class="text-center color-texto">Número de cuenta Interbank: 3403118464317 </h4>
         <h4 class="text-center color-texto">CCI Interbank: 00334001311846431772 </h4>
         

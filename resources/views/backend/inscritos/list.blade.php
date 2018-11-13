@@ -131,6 +131,12 @@
     <script src="https://unpkg.com/sweetalert2@7.20.3/dist/sweetalert2.all.js"></script>
     
     <script type="text/javascript">
+$( "[name='monto']" ).keyup(function() {
+  $monto=this.value;
+	$tipo=$("[name='pay']").val();
+$vuelto=$monto-$tipo;
+	 $("[name='vuelto']").val($vuelto);
+});
 
         $("[name='typeEdit']").on('change', function() {
             var valor=this.value;
@@ -233,6 +239,14 @@ else if(valor==='docente_esis'){
             else{
 
             }
+
+$monto=$("[name='monto']").val();
+	$tipo=$("[name='pay']").val();
+$vuelto=$monto-$tipo;
+	 $("[name='vuelto']").val($vuelto);
+
+	
+
 });
 
         $(document).ready(function () {

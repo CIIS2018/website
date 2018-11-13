@@ -8,7 +8,7 @@ Estimado(a):
 
 Le damos la bienvenida al <p style="font-weight: bold;">XIX CONGRESO INTERNACIONAL DE INFORMÁTICA Y SISTEMAS - CIIS 2018.</p>
 
-Su código de inscripción es: <span style="background-color: yellow;color: red; ">000{{$id}}</span>, conserve su código para la entrega de sus materiales y control de asistencia.
+Su código de inscripción es: <span style="background-color: yellow;color: red; ">00{{$id}}</span>, conserve su código para la entrega de sus materiales y control de asistencia.
 
 Agradeceremos verificar la correcta consignación de su nombre, para efecto de la emisión de su certificado como asistente del evento; en el caso existiera alguna observación favor comunicarlo por este medio.
 

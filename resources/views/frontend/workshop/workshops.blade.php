@@ -1,8 +1,8 @@
 <section class="ImageBackground ImageBackground--overlay js-Parallax" data-overlay="2">
 <!--    <div class="ImageBackground__holder" style="background: rgba(0, 0, 0, 0) url('images/datacenter.jpg') repeat scroll 50% 0px;">-->
-    <div class="ImageBackground__holder" style="background-image: url('images/datacenter.jpg'); background-position: 50% 0px;">
+    <div class="ImageBackground__holder" style="background-image: url('../images/talleres/datacenter.jpg'); background-position: 50% 0px;">
     
-        <img src="images/datacenter.jpg" alt="Coneic 2018">
+        <img src="../images/talleres/datacenter.jpg" alt="Coneic 2018">
     </div>
     <div class="container u-PaddingTop100 u-PaddingBottom100" id="talleres">
          <div class="row text-center justify-content-center">
@@ -13,35 +13,16 @@
         </div>
         
         <div class="row justify-content-center u-MarginBottom40">
-        
-            <!--<div class="mx-auto col-lg-4 col-md-6 text-center u-xs-MarginBottom40 a_inversion">
-                <div class="u-BoxShadow100">
-                    <div class="Blurb Blurb--wrapper bg-primary bg-primary--gradient--ciis u-BorderRadius6">
-                        <div class="u-FontSize50 u-Weight700 img-with">
-                            <img class="card-img-top img-fluid" src="../images/fibrajpg.jpg" alt="Card image cap">
-                        </div>
-                        <h3 class=" u-MarginTop0 u-MarginBottom10">Estándares de instalación de fibra óptica entre edificios</h3>
-                        <small class="text-uppercase">Docente:  Carlos Cervantes (PANDUIT)</small>
-                        <p class="  u-MarginTop25 u-MarginBottom0 u-LineHeight3">
-                            Fecha: Viernes <b>16</b> de noviembre<br><br>
-                            Única sesión: 3:00 a 5:00 pm<br>
-                        </p>
-                    </div>
-                </div>
-            </div>!-->
+             
             <div class="mx-auto col-xl-4 col-md-6 col-lg-5 text-center u-xs-MarginBottom40 u-PaddingBottom40 a_inversion">
                 <div class="u-BoxShadow100">
                     <div class="Blurb Blurb--wrapper u-BorderRadius6 taller-ciis">
                         <div class="u-FontSize50 u-Weight700 img-with">
                             <img class=" img-fluid height-120" src="../images/talleres/Blockchain.png" alt="Card image cap">
                         </div>
-                        <h4 class="u-MarginTop35 u-MarginBottom25">Construcción de aplicaciones de frío en el dominio de la IO y BLOCKCHAIN</h4>
+                        <h5 class="taller_titulo u-MarginTop15 u-MarginBottom0">Constructing cool applications in the domain of IoT and BLOCKCHAIN</h5>
                         <div class="mt-3">
-                            <p>Docente: Ph.D. Jó Ueyama</p>
-                            <!--<p class="u-MarginTop20 u-MarginBottom0 u-LineHeight3">
-                                Fecha: Martes <b>13</b> de noviembre<br>
-                                Única sesión: 14:00 a 16:00 h<br>
-                            </p>-->
+                            <p class="taller_docente mb-4"><img style="width: 8%;" src="../images/talleres/speaker.svg" alt="" title="Docente"> Ph.D. Jó Ueyama</p>
                             <table class="tabla">
                                 <tr class="fila_tabla">
                                     <td class="columna_table">Fecha:</td>
@@ -61,42 +42,11 @@
                 <div class="u-BoxShadow100">
                     <div class="Blurb Blurb--wrapper u-BorderRadius6 taller-ciis">
                         <div class="u-FontSize50 u-Weight700 img-with">
-                            <img class=" img-fluid height-120" src="../images/talleres/dron_phantom.jpg" alt="Card image cap">
+                            <img class=" img-fluid height-120" src="../images/talleres/heart.png" alt="">
                         </div>
-                        <h3 class="u-MarginTop45 u-MarginBottom45">Drones DJI</h3>
+                        <h5 class="taller_titulo u-MarginTop15 u-MarginBottom0">Introduction du digital geometry and some open questions</h5>
                         <div class="mt-3">
-                            <p>Docente: MSc. Manuel Barraza</p>
-                            <table class="tabla">
-                                <tr class="fila_tabla">
-                                    <td class="columna_table">Fecha:</td>
-                                    <td class="columna_table">Martes <b>13</b> de noviembre</td>
-                                </tr>
-                                <tr class="fila_tabla">
-                                    <td>Primera sesión:</td>
-                                    <td>8:00 a 10:00 h</td>
-                                </tr>
-                                <tr class="fila_tabla">
-                                    <td>Segunda sesión:</td>
-                                    <td>14:00 a 16:00 h</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>             
-            <div class="mx-auto col-xl-4 col-md-6 col-lg-5 text-center u-xs-MarginBottom40 u-PaddingBottom40 a_inversion">
-                <div class="u-BoxShadow100">
-                    <div class="Blurb Blurb--wrapper u-BorderRadius6 taller-ciis">
-                        <div class="u-FontSize50 u-Weight700 img-with">
-                            <img class=" img-fluid height-120" src="../images/talleres/impresion-3d.jpg" alt="Card image cap">
-                        </div>
-                        <h3 class="u-MarginTop35 u-MarginBottom25">Diseño e Impresión 3D</h3>
-                        <div class="mt-3">
-                            <p>Docente: Dr. Edwin Hinojosa Ramos</p>
-                            <!--<p class="u-MarginTop20 u-MarginBottom0 u-LineHeight3">
-                                Fecha: Martes <b>13</b> de noviembre<br>
-                                Única sesión: 14:00 a 16:00 h<br>
-                            </p>-->
+                            <p class="taller_docente mb-4"><img style="width: 8%;" src="../images/talleres/speaker.svg" alt="" title="Docente"> Ph.D. Eric Bruno Andres</p>
                             <table class="tabla">
                                 <tr class="fila_tabla">
                                     <td class="columna_table">Fecha:</td>
@@ -104,115 +54,23 @@
                                 </tr>
                                 <tr class="fila_tabla">
                                     <td>Única sesión:</td>
-                                    <td>14:00 a 17:00 h</td>
+                                    <td>10:00 a 12:00 h</td>
                                 </tr>
                             </table>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="mx-auto col-xl-4 col-md-6 col-lg-5 text-center u-xs-MarginBottom40 u-PaddingBottom40 a_inversion">
-                <div class="u-BoxShadow100">
-                    <div class="Blurb Blurb--wrapper u-BorderRadius6 taller-ciis">
-                        <div class="u-FontSize50 u-Weight700 img-with">
-                            <img class=" img-fluid height-120" src="../images/talleres/robotica-taller.png" alt="Card image cap">
-                        </div>
-                        
-                        <h3 class="u-MarginTop35 u-MarginBottom25">Iniciación en la Robótica</h3>
-                        <div class="mt-3">
-                            <p>Docente: Mg. Ricardo Pérez Sánchez</p>
-                            <!--<p class="u-MarginTop20 u-MarginBottom0 u-LineHeight3">
-                                Fecha: Miércoles <b>14</b> de noviembre<br>
-                                Primera sesión: 8:30 a 10:30 h<br>
-                                Segunda sesión: 15:00 a 17:00 h
-                            </p>-->
-                            <table class="tabla">
-                                <tr class="fila_tabla">
-                                    <td class="columna_table">Fecha:</td>
-                                    <td class="columna_table">Miércoles <b>14</b> de noviembre</td>
-                                </tr>
-                                <tr class="fila_tabla">
-                                    <td>Primera sesión:</td>
-                                    <td>8:30 a 10:30 h</td>
-                                </tr>
-                                <tr class="fila_tabla">
-                                    <td>Segunda sesión:</td>
-                                    <td>15:00 a 17:00 h</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- <div class="mx-auto col-xl-4 col-md-6 col-lg-5 text-center u-xs-MarginBottom40 u-PaddingBottom40 a_inversion">
-                <div class="u-BoxShadow100">
-                    <div class="Blurb Blurb--wrapper u-BorderRadius6 taller-ciis">
-                        <div class="u-FontSize u-Weight700 img-with">
-                            <img class=" img-fluid height-120" src="../images/talleres/videovigilancia.jpeg" alt="Card image cap">
-                        </div>
-                       
-                        <h4 class="u-MarginTop40 u-MarginBottom35">Instalación, configuración de cámara de videovigilancia</h4>
-                        <div class="mt-3">
-                            <p>Docente: Arturo Ramos Moscoso</p>
-                            <table class="tabla">
-                                <tr class="fila_tabla">
-                                    <td class="columna_table">Fecha:</td>
-                                    <td class="columna_table">Miércoles <b>14</b> de noviembre</td>
-                                </tr>
-                                <tr class="fila_tabla">
-                                    <td>Única sesión:</td>
-                                    <td>14:00 a 17:00 h</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
-            <div class="mx-auto col-xl-4 col-md-6 col-lg-5 text-center u-xs-MarginBottom40 u-PaddingBottom40 a_inversion">
-                <div class="u-BoxShadow100">
-                    <div class="Blurb Blurb--wrapper u-BorderRadius6 taller-ciis">
-                        <div class="u-FontSize u-Weight700 img-with">
-                            <img class=" img-fluid height-120" src="../images/talleres/machine-learning.jpg" alt="Card image cap">
-                        </div>
-                        <h4 class="u-MarginTop35 u-MarginBottom55">Introducción a Machine Learning con Python</h4>
-                        <div class="mt-5 pt-1">
-                            <p>Docente: MSc.(c) Israel Chaparro Cruz</p>
-                            <!--<p class="  u-MarginTop5 u-MarginBottom25">
-                                Fecha: Miércoles <b>14</b> de noviembre<br>
-                                Única sesión: 8:30 a 11:30 h<br>
-                            </p>-->
-                            <table class="tabla">
-                                <tr class="fila_tabla">
-                                    <td class="columna_table">Fecha:</td>
-                                    <td class="columna_table">Miércoles <b>14</b> de noviembre</td>
-                                </tr>
-                                <tr class="fila_tabla">
-                                    <td>Única sesión:</td>
-                                    <td>8:30 a 11:30 h</td>
-                                </tr>
-                            </table>
-                    </div>
-                    </div>
-                </div>
-            </div>
+            
             <div class="mx-auto col-xl-4 col-md-6 col-lg-5 text-center u-xs-MarginBottom40 u-PaddingBottom40 a_inversion">
                 <div class="u-BoxShadow100">
                     <div class="Blurb Blurb--wrapper u-BorderRadius6 taller-ciis">
                         <div class="u-FontSize u-Weight700 img-with">
                             <img class=" img-fluid height-120" src="../images/talleres/gps.jpg" alt="Card image cap">
                         </div>
-                       
-                        <h5 class="u-MarginTop10 u-MarginBottom0">Sistema de navegación autónoma para robótica móvil con GPS y magnetómetro</h5>
+                        <h5 class="taller_titulo u-MarginTop15 u-MarginBottom0">Sistema de navegación autónoma para robótica móvil con GPS y magnetómetro</h5>
                         <div class="mt-3">
-                            <p>Docente: Mg. Sergio Hernán Valenzuela Cámara</p>
-                            <!--<p class="  u-MarginTop0 u-MarginBottom0">
-                                Fecha: Miércoles <b>14</b> de noviembre<br>
-                                Primera sesión: 15:00 a 18:00 h<br>
-                                Fecha: Jueves <b>15</b> de noviembre<br>
-                                Segunda sesión: 8:30 a 10:30 h
-                            </p>-->
+                            <p class="taller_docente mb-4"><img style="width: 8%;" src="../images/talleres/speaker.svg" alt="" title="Docente"> Mg. Sergio Hernán Valenzuela Cámara</p>
                             <table class="tabla">
                                 <tr class="fila_tabla">
                                     <td class="columna_table">Fecha:</td>
@@ -236,9 +94,154 @@
                 </div>
             </div>
             
+            <div class="mx-auto col-xl-4 col-md-6 col-lg-5 text-center u-xs-MarginBottom40 u-PaddingBottom40 a_inversion">
+                <div class="u-BoxShadow100">
+                    <div class="Blurb Blurb--wrapper u-BorderRadius6 taller-ciis">
+                        <div class="u-FontSize u-Weight700 img-with">
+                            <img class=" img-fluid height-120" src="../images/talleres/videovigilancia.jpeg" alt="">
+                        </div>
+                        <h5 class="taller_titulo u-MarginTop15 u-MarginBottom0">Instalación y configuración de cámaras de seguridad</h5>
+                        <div class="mt-3">
+                            <p class="taller_docente mb-4"><img style="width: 8%;" src="../images/talleres/speaker.svg" alt="" title="Docente"> Arturo Ramos Moscoso</p>
+                            <table class="tabla">
+                                <tr class="fila_tabla">
+                                    <td class="columna_table">Fecha:</td>
+                                    <td class="columna_table">Miércoles <b>14</b> de noviembre</td>
+                                </tr>
+                                <tr class="fila_tabla">
+                                    <td>Única sesión:</td>
+                                    <td>14:00 a 17:00 h</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mx-auto col-xl-4 col-md-6 col-lg-5 text-center u-xs-MarginBottom40 u-PaddingBottom40 a_inversion">
+                <div class="u-BoxShadow100">
+                    <div class="Blurb Blurb--wrapper u-BorderRadius6 taller-ciis">
+                        <div class="u-FontSize50 u-Weight700 img-with">
+                            <img class=" img-fluid height-120" src="../images/talleres/robotica-taller.png" alt="">
+                        </div>
+                        <h4 class="taller_titulo u-MarginTop15 u-MarginBottom0">Introducción a la robótica</h4>
+                        <div class="mt-3">
+                            <p class="taller_docente mb-4"><img style="width: 8%;" src="../images/talleres/speaker.svg" alt="" title="Docente"> Mg. Ricardo Pérez Sánchez</p>
+                            <table class="tabla">
+                                <tr class="fila_tabla">
+                                    <td class="columna_table">Fecha:</td>
+                                    <td class="columna_table">Miércoles <b>14</b> de noviembre</td>
+                                </tr>
+                                <tr class="fila_tabla">
+                                    <td>Primera sesión:</td>
+                                    <td>8:30 a 10:30 h</td>
+                                </tr>
+                                <tr class="fila_tabla">
+                                    <td>Segunda sesión:</td>
+                                    <td>15:00 a 17:00 h</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mx-auto col-xl-4 col-md-6 col-lg-5 text-center u-xs-MarginBottom40 u-PaddingBottom40 a_inversion">
+                <div class="u-BoxShadow100">
+                    <div class="Blurb Blurb--wrapper u-BorderRadius6 taller-ciis">
+                        <div class="u-FontSize50 u-Weight700 img-with">
+                            <img class=" img-fluid height-120" src="../images/talleres/dron_phantom.jpg" alt="">
+                        </div>
+                        <h4 class="taller_titulo u-MarginTop15 u-MarginBottom0">Drones DJI</h4>
+                        <div class="mt-3">
+                            <p class="taller_docente mb-4"><img style="width: 8%;" src="../images/talleres/speaker.svg" alt="" title="Docente"> MSc. Manuel Barraza</p>
+                            <table class="tabla">
+                                <tr class="fila_tabla">
+                                    <td class="columna_table">Fecha:</td>
+                                    <td class="columna_table">Martes <b>13</b> de noviembre</td>
+                                </tr>
+                                <tr class="fila_tabla">
+                                    <td>Primera sesión:</td>
+                                    <td>8:00 a 10:00 h</td>
+                                </tr>
+                                <tr class="fila_tabla">
+                                    <td>Segunda sesión:</td>
+                                    <td>14:00 a 16:00 h</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mx-auto col-xl-4 col-md-6 col-lg-5 text-center u-xs-MarginBottom40 u-PaddingBottom40 a_inversion">
+                <div class="u-BoxShadow100">
+                    <div class="Blurb Blurb--wrapper u-BorderRadius6 taller-ciis">
+                        <div class="u-FontSize50 u-Weight700 img-with">
+                            <img class=" img-fluid height-120" src="../images/talleres/impresion-3d.jpg" alt="">
+                        </div>
+                        <h4 class="taller_titulo u-MarginTop15 u-MarginBottom0">Diseño e impresión 3D</h4>
+                        <div class="mt-3">
+                            <p class="taller_docente mb-4"><img style="width: 8%;" src="../images/talleres/speaker.svg" alt="" title="Docente"> Dr. Edwin Hinojosa Ramos</p>
+                            <table class="tabla">
+                                <tr class="fila_tabla">
+                                    <td class="columna_table">Fecha:</td>
+                                    <td class="columna_table">Martes <b>13</b> de noviembre</td>
+                                </tr>
+                                <tr class="fila_tabla">
+                                    <td>Única sesión:</td>
+                                    <td>14:00 a 17:00 h</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mx-auto col-xl-4 col-md-6 col-lg-5 text-center u-xs-MarginBottom40 u-PaddingBottom40 a_inversion">
+                <div class="u-BoxShadow100">
+                    <div class="Blurb Blurb--wrapper u-BorderRadius6 taller-ciis">
+                        <div class="u-FontSize u-Weight700 img-with">
+                            <img class=" img-fluid height-120" src="../images/talleres/machine-learning.jpg" alt="">
+                        </div>
+                        <h4 class="taller_titulo u-MarginTop15 u-MarginBottom55">Introducción a Machine Learning con Python</h4>
+                        <div class="mt-3">
+                            <p class="taller_docente mb-4"><img style="width: 8%;" src="../images/talleres/speaker.svg" alt="" title="Docente"> MSc.(c) Israel Chaparro Cruz</p>
+                            <table class="tabla">
+                                <tr class="fila_tabla">
+                                    <td class="columna_table">Fecha:</td>
+                                    <td class="columna_table">Miércoles <b>14</b> de noviembre</td>
+                                </tr>
+                                <tr class="fila_tabla">
+                                    <td>Única sesión:</td>
+                                    <td>8:30 a 11:30 h</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--<div class="mx-auto col-lg-4 col-md-6 text-center u-xs-MarginBottom40 a_inversion">
+                <div class="u-BoxShadow100">
+                    <div class="Blurb Blurb--wrapper bg-primary bg-primary--gradient--ciis u-BorderRadius6">
+                        <div class="u-FontSize50 u-Weight700 img-with">
+                            <img class="card-img-top img-fluid" src="../images/fibrajpg.jpg" alt="Card image cap">
+                        </div>
+                        <h3 class=" u-MarginTop0 u-MarginBottom10">Estándares de instalación de fibra óptica entre edificios</h3>
+                        <small class="text-uppercase">Docente:  Carlos Cervantes (PANDUIT)</small>
+                        <p class="  u-MarginTop25 u-MarginBottom0 u-LineHeight3">
+                            Fecha: Viernes <b>16</b> de noviembre<br><br>
+                            Única sesión: 3:00 a 5:00 pm<br>
+                        </p>
+                    </div>
+                </div>
+            </div>!-->
+            
         </div>
     </div>
 </section>
+
 
 {{--
 <div class="container-fluid mt-5 mb-5">

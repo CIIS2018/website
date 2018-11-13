@@ -15,6 +15,13 @@
 <li class="nav-item px-2">
                     <a href="/admin/reporte/registrados" class="nav-link">Registrados</a>
                 </li>
+<li class="nav-item px-2">
+                    <a href="/admin/reporte/taller" class="nav-link">Talleres</a>
+                </li>
+<li class="nav-item px-2">
+                    <a href="/admin/reporte/concurso" class="nav-link">Concurso</a>
+                </li>
+
 
             </ul>
             

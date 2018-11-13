@@ -1,11 +1,9 @@
-
-
 <!-- ADD INSCRITO MODAL -->
-<div class="modal fade" id="editInscritoTallerModal">
+<div class="modal fade" id="editInscritoConcursoModal">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header bg-primary text-white">
-                <h5 class="modal-title" id="editInscritoTallerModalLabel">Editar una Inscripcion Taller</h5>
+                <h5 class="modal-title" id="editInscritoConcursoModalLabel">Editar una Inscripcion Concurso</h5>
                 <button class="close" data-dismiss="modal">
                     <span>&times;</span>
                 </button>
@@ -13,8 +11,6 @@
             <div class="modal-body">
                 <form method='POST' action="" enctype="multipart/form-data">
                     @csrf
-    
-                   
                     <div class="form-group">
                         <label for="nameEdit" class="form-control-label">Nombre de la persona</label>
                         <input type="text" name="nombreEdit" class="form-control">
@@ -34,16 +30,11 @@
                     </div>
                     
                     <div class="form-group">
-                        <label for="typeEdit" class="form-control-label">Taller de Inscripcion</label>
-                        <select class="form-control" name="tallerEdit">
-                        <option value="Diseño e impresion 3D">Diseño e impresion 3D</option>
-                            <option value="Drones DJI">Drones DJI</option>
-                            <option value="SNAPR movil con GPS y Magnetometro">SNAPR movil con GPS y Magnetometro</option>
-                            <option value="Introduccion a la Robotica">Introduccion a la robotica</option>
-                            <option value="Machine Learning con Python">Machine Learning con python</option>
-                            <option value="Brasil">ciencias de la computacion(brasil)</option>
-                            <option value="Frances">ciencias de la computacion(frances)</option>
-                            <option value="Instalacion y configuracion de camara de videovigilancia">Instalacion y configuracion de camara de videovigilancia</option>
+                        <label for="typeEdit" class="form-control-label">Concurso de Inscripcion</label>
+                        <select class="form-control" name="concursoEdit">
+                            <option value="Conocimientos">Concurso de Conocimientos</option>
+                            <option value="Robotica">Concurso de Robotica</option>
+                            <option value="Programacion">Concurso de Programacion</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -52,12 +43,16 @@
                     </div>
                     
                     <div class="form-group">
-                        <label for="inscripciontaller" class="form-control-label">Tipo de inscripcion</label>
-                        <select class="form-control" name="inscripcionEdit">
-                            <option value="inscrito CIIS">inscrito CIIS</option>
-                            <option value="No inscrito CIIS">No inscrito CIIS</option>
-                            <option value="estudiante ESIS">estudiante ESIS</option>
+                        <label for="tipoincripcion" class="form-control-label">Tipo de Inscripcion</label>
+                        <select class="form-control" name="tipoinscripcionEdit">
+                            <option value="Inscrito CIIS">Inscrito CIIS</option>
+                            <option value="No Inscript CIIS">No inscrito CIIS</option>
+                            <option value="Estudiante ESIS">Estudiante ESIS</option>
                         </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="integrantesEdit" class="form-control-label">Integrantes de Equipo</label>
+                        <textarea type="text" name="integrantesEdit" class="form-control"></textarea>
                     </div>
                 
                     <div class="modal-footer">
