@@ -193,6 +193,20 @@
     </div>
 </section>
 
+<section class="container-fluid mb-3 mt-5">
+    <div class="container">
+            <h3 class="text-primary pb-3 text-center a_title">Horario de ponentes</h3>
+        <div class="row">
+                
+                <div class="col-12 m-3">
+                        <a class="example-image-link" href="../images/cronograma.png" data-lightbox="example-set" data-title="">
+                            <img class="example-image img-fluid " src="../images/cronograma.png" alt=""/>
+                        </a>
+                    </div>
+        </div>
+    </div>
+</section>
+
 
 <section class="container-fluid beneficio mt-3">
     <div class="container pt-3 pb-4">

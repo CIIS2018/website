@@ -9,6 +9,7 @@ use App\Schedules;
 use Illuminate\Support\Carbon;
 use DateTimeZone;
 use App\Inscritos;
+
 class AssistenceController extends Controller
 {
     /**
@@ -21,69 +22,69 @@ class AssistenceController extends Controller
         //
     }
 
-   public function student(Request $request)
+    public function student(Request $request)
     {
         //
         $id = $request->id;
         //$horario = $request->horario;
         $student = Inscritos::find($id);
-        if(count($student) === 0) return response()->json([
-            'status'=>'error',
-            'estudiante'=>'desconocido',
-            'turno'=>'desconocido',
-            'message'=>'Estudiante no ha sido encontrado',
-        ],401);
+        if (count($student) === 0) return response()->json([
+            'status' => 'error',
+            'estudiante' => 'desconocido',
+            'turno' => 'desconocido',
+            'message' => 'Estudiante no ha sido encontrado',
+        ], 401);
         $getData = Carbon::now(new DateTimeZone('America/Lima'));
         $hour = $getData->hour;
-        if($hour >  7 && $hour < 13){
+        if ($hour > 7 && $hour < 13) {
             $horario = 2;
-        }else if($hour > 13 && $hour < 22){
+        } else if ($hour > 13 && $hour < 22) {
             $horario = 1;
-        }else {
+        } else {
             return response()->json([
-                'status'=>'error',
-                'estudiante'=> $student->nombre ,
-                'turno'=> "No permitido",
-                'message'=>'Horario no permitido',
-            ],421 );
+                'status' => 'error',
+                'estudiante' => $student->nombre,
+                'turno' => "No permitido",
+                'message' => 'Horario no permitido',
+            ], 421);
         }
         $schedule = Schedules::find($horario);
 
-        
+
         //if(count($schedule) === 0) return response()->json('Horario no encontrado',401);
-        $student_assistence = Assistence::where('students_id','=',$student->id)
-                                            ->whereDate('date_assistence',Carbon::today())
-                                            ->where('schedules_id','=',$horario)
-                                            ->orderBy('date_assistence', 'desc')
-                                            ->count();
+        $student_assistence = Assistence::where('students_id', '=', $student->id)
+            ->whereDate('date_assistence', Carbon::today())
+            ->where('schedules_id', '=', $horario)
+            ->orderBy('date_assistence', 'desc')
+            ->count();
 
         //return response()->json($student_assistence);
-        if($student_assistence) {
-            
+        if ($student_assistence) {
+
             return response()->json([
-                'status'=>'warning',
-                'estudiante'=>$student->nombre ,
-                'turno'=>$schedule->name,
-                'message'=>'Estudiante ya ha sido registrado',
-            ],421 );
+                'status' => 'warning',
+                'estudiante' => $student->nombre,
+                'turno' => $schedule->name,
+                'message' => 'Estudiante ya ha sido registrado',
+            ], 421);
         }
 
-        try{
+        try {
             $student->schedules()->attach(
                 $schedule->id,
                 ['date_assistence' => Carbon::now(new DateTimeZone('America/Lima'))]
             );
             return response()->json([
-                'status'=>'success',
-                'estudiante'=>$student->nombre ,
-                'turno'=>$schedule->name,
-                'message'=>'Estudiante registrado en la asistencia',
-            ],200 );;
-        }catch (\Exception $e){
+                'status' => 'success',
+                'estudiante' => $student->nombre,
+                'turno' => $schedule->name,
+                'message' => 'Estudiante registrado en la asistencia',
+            ], 200);;
+        } catch (\Exception $e) {
             return response()->json([
-                'status'=>'error',
-                'message'=>'Un error ha ocurrido',
-            ],500 );
+                'status' => 'error',
+                'message' => 'Un error ha ocurrido',
+            ], 500);
         }
 
     }
@@ -101,7 +102,7 @@ class AssistenceController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -112,7 +113,7 @@ class AssistenceController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Assitence  $assitence
+     * @param  \App\Assitence $assitence
      * @return \Illuminate\Http\Response
      */
     public function show(Assitence $assitence)
@@ -123,7 +124,7 @@ class AssistenceController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Assitence  $assitence
+     * @param  \App\Assitence $assitence
      * @return \Illuminate\Http\Response
      */
     public function edit(Assitence $assitence)
@@ -134,8 +135,8 @@ class AssistenceController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Assitence  $assitence
+     * @param  \Illuminate\Http\Request $request
+     * @param  \App\Assitence $assitence
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Assitence $assitence)
@@ -146,11 +147,67 @@ class AssistenceController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Assitence  $assitence
+     * @param  \App\Assitence $assitence
      * @return \Illuminate\Http\Response
      */
     public function destroy(Assitence $assitence)
     {
         //
     }
+
+    public function renderReportTable()
+    {
+
+//        $data = Assistence::whereDate('date_assistence', '>', Carbon::createFromDate(2018, 11, 10))->whereDate('date_assistence', '<', Carbon::now()->addDay(1))->get();
+
+
+
+
+        $data = [];
+
+        $inscritos = Inscritos::get();
+
+//        return response()->json($inscritos);
+
+
+        foreach ($inscritos as $student){
+
+            $assistence = Inscritos::find($student->id)->schedules()->whereDate('date_assistence', '>', Carbon::createFromDate(2018, 11, 11))->whereDate('date_assistence', '<', Carbon::createFromDate(2018, 11, 17))->count();
+
+            if($assistence >= 8){
+
+                $data[] = $student;
+
+            }
+
+        }
+
+//        $data = Inscritos::find(101)->schedules()->whereDate('date_assistence', '>', Carbon::createFromDate(2018, 11, 11))->whereDate('date_assistence', '<', Carbon::createFromDate(2018, 11, 17))->get();
+
+
+//        $data_1_1 = Assistence::select('students_id')->whereDate('date_assistence', '>', Carbon::createFromDate(2018, 11, 11))->whereDate('date_assistence', '<', Carbon::createFromDate(2018, 11, 13))->where('schedules_id', 1)->get();
+//
+//        $data_1_2 = Assistence::select('students_id')->whereDate('date_assistence', '>', Carbon::createFromDate(2018, 11, 11))->whereDate('date_assistence', '<', Carbon::createFromDate(2018, 11, 13))->where('schedules_id', 2)->get();
+//
+//
+//        $data = [];
+//
+//        foreach ($data_1_1 as $val) {
+//
+//            foreach($data_1_2 as $re){
+//
+//                if($val->students_id == $re->students_id){
+//
+//                    $data[] = $val;
+//
+//                }
+//            }
+//
+//        }
+
+
+        return view('backend.assistence.list',compact('data'));
+
+    }
+
 }

@@ -1,5 +1,3 @@
-
-
 <!-- ADD INSCRITO MODAL -->
 <div class="modal fade" id="editInscritoTallerModal">
     <div class="modal-dialog modal-lg">
@@ -13,8 +11,6 @@
             <div class="modal-body">
                 <form method='POST' action="" enctype="multipart/form-data">
                     @csrf
-    
-                   
                     <div class="form-group">
                         <label for="nameEdit" class="form-control-label">Nombre de la persona</label>
                         <input type="text" name="nombreEdit" class="form-control">
@@ -41,8 +37,8 @@
                             <option value="SNAPR movil con GPS y Magnetometro">SNAPR movil con GPS y Magnetometro</option>
                             <option value="Introduccion a la Robotica">Introduccion a la robotica</option>
                             <option value="Machine Learning con Python">Machine Learning con python</option>
-                            <option value="Brasil">ciencias de la computacion(brasil)</option>
-                            <option value="Frances">ciencias de la computacion(frances)</option>
+                            <option value="CONSTRUCTING COOL APPLICATIONS IN THE DOMAIN OF IoT AND BLOCKCHAIN">CONSTRUCTING COOL APPLICATIONS IN THE DOMAIN OF IoT AND BLOCKCHAIN</option>
+                            <option value="INTRODUCTION DU DIGITAL GEOMETRY AND SOME OPEN QUESTIONS">INTRODUCTION DU DIGITAL GEOMETRY AND SOME OPEN QUESTIONS</option>
                             <option value="Instalacion y configuracion de camara de videovigilancia">Instalacion y configuracion de camara de videovigilancia</option>
                         </select>
                     </div>

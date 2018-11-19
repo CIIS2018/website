@@ -50,7 +50,9 @@
                             <th>Instituci�n</th>
 			    <th>Tipo</th>
                             <th>Pago</th>
-                            <th>Accion</th>
+<th>Email</th>
+<th>Celular</th>                       
+     <th>Accion</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -63,7 +65,9 @@
 				<td>{{$inscrito->tipo_inscripcion}}</td>
 
                                 <td>{{$inscrito->pago}}</td>
-				
+				<td>{{$inscrito->email}}</td>
+<td>{{$inscrito->celular}}</td>
+
                                 <td>
                                     <button type="button" data-id="{{$inscrito->id}}" class="btn btn-outline-primary btn-sm read-inscrito-modal">
                                         <i class="fa fa-eye"></i></button>
@@ -182,6 +186,10 @@ $vuelto=$monto-$tipo;
 else if(valor==='agosto'){
                 $("[name='payEdit']").val('80');
             }
+else if(valor==='organizador'){
+                $("[name='payEdit']").val('25');
+            }
+
 
             else{
 
@@ -235,6 +243,10 @@ else if(valor==='docente_esis'){
  else if(valor==='agosto'){
                 $("[name='pay']").val('80');
             }
+ else if(valor==='organizador'){
+                $("[name='pay']").val('25');
+            }
+
 
             else{
 

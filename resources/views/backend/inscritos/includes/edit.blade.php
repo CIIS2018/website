@@ -90,6 +90,10 @@
                             <option value="delegacion3" >Delegación 90</option>
                             <option value="delegacion4" >Delegación 95</option>
                         <option value="agosto" >Promo agosto</option>
+<option value="organizador" >Organizador</option>
+<option value="profesional-UNA-delegacion" >Profesional UNA delegacion</option>
+<option value="da�ado" >Carnet perdido</option>
+
 
                         </select>
 

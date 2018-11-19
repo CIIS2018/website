@@ -50,7 +50,7 @@
                             <table class="tabla">
                                 <tr class="fila_tabla">
                                     <td class="columna_table">Fecha:</td>
-                                    <td class="columna_table">Martes <b>13</b> de noviembre</td>
+                                    <td class="columna_table">Jueves <b>15</b> de noviembre</td>
                                 </tr>
                                 <tr class="fila_tabla">
                                     <td>Única sesión:</td>

@@ -18,7 +18,12 @@ Route::group(['prefix' => 'admin'], function () {
 
     Voyager::routes();
 
-    Route::get('/reporte/asistencia','AssistenceController@renderReportTable')->name('report.assistence');
+    Route::get('/reporte/consulta/excel','ReportController@listMain')->name('report.excel.list');
+
+    Route::get('/reporte/consulta/excel/asistencia','ReportController@assistence')->name('report.excel.assistence');
+
+
+    Route::get('/reporte/asistencia/100','AssistenceController@renderReportTable')->name('report.assistence');
 
 Route::get('/reporte/inscritos/imprimir/{id}', 'InscritosController@imprimir')->name('imprimir');
 

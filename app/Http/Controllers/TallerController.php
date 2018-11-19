@@ -20,7 +20,8 @@ class tallerController extends Controller
     }
 
 public function imprimir($id){
-    $datos=inscritosTaller::find($id);
+    //dd($id);
+    $datos=inscritosTaller::find($id); 
 $cobrador=User::find($datos->last_user_modificied);
     return view('backend.inscritos.imprimir_taller')->with('datos', $datos)->with('cobrador', $cobrador);
   }

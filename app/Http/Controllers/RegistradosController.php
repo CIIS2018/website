@@ -16,7 +16,27 @@ class RegistradosController extends Controller
 
     public function searchRegistered (Request $request){
 
-        $student = Registered::where('dni',$request->code)->get();
+        $student = Registered::where('dni',$request->code)->first();
+
+        if(isset($student->tipo_inscripcion)){
+
+            switch ($student->tipo_inscripcion){
+
+                case 'estudiante_esis':
+                    $inscrito = Inscritos::where('codigo',$student->dni)->first();
+                    if($inscrito){
+                        $student->institucion = $inscrito->institucion;
+                    }
+                    break;
+                default:
+                    break;
+
+            }
+        }else{
+
+            $student = Inscritos::where('dni',$request->code)->first();
+
+        }
 
         return response()->json($student);
 

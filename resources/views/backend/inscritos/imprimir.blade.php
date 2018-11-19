@@ -165,6 +165,12 @@ hr.style11 {
       <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Delegación</span></p>
       @elseif ($datos->tipo_inscripcion==='agosto')
       <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Promoción agosto</span></p>
+  @elseif ($datos->tipo_inscripcion==='organizador')
+        <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Organizador</span></p>
+  
+  @elseif ($datos->tipo_inscripcion==='profesional-UNA-delegacion')
+        <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Delegacion</span></p>
+  
 
       @endif
 
@@ -282,7 +288,13 @@ hr.style11 {
         <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Delegación</span></p>
         @elseif ($datos->tipo_inscripcion==='agosto')
         <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Promoción agosto</span></p>
+  @elseif ($datos->tipo_inscripcion==='organizador')
+        <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Organizador</span></p>
+   @elseif ($datos->tipo_inscripcion==='profesional-UNA-delegacion')
+        <p style="font-weight: bold">Tipo de inscripción: <span style="font-weight:normal">Delegacion</span></p>
   
+
+
         @endif
   
         {{-- <p style="text-align: center;font-weight: bold;">Inversión: S/.{{$datos->pago}}.00</p> --}}

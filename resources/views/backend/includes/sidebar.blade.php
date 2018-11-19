@@ -21,8 +21,10 @@
 <li class="nav-item px-2">
                     <a href="/admin/reporte/concurso" class="nav-link">Concurso</a>
                 </li>
-
-
+    
+                <li class="nav-item px-2">
+                    <a href="/admin/reporte/consulta/excel" class="nav-link">Excel</a>
+                </li>
             </ul>
             
             

@@ -207,7 +207,7 @@
           
 
   </div>
-  <div style="margin-left:570px;margin-top:-670px;width:340px">
+  <div style="margin-left:570px;margin-top:-800px;width:340px">
 
     <img src="{{asset('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF0CfX9o5NPj0I2Pzo7sX7Aab-cUnVDJuJ9aclFVJ9lD7kgLV9')}}" style="width:100px">
     <p style="margin-top: -80px;margin-left: 110px;font-weight: bold;" >XIX CONGRESO INTERNACIONAL </p>
